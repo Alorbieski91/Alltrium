@@ -180,7 +180,7 @@ function init_gear_sets()
         head="Chass. Tricorne",
         body="Oshosi Vest",
         hands="Carmine Fin. Ga. +1",
-        legs="Adhemar Kecks",
+        legs="Oshosi Trousers",
         feet="Meg. Jam. +2",
         neck="Comm. Charm +1",
         waist="Impulse Belt",
