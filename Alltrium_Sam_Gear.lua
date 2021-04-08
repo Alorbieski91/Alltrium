@@ -141,8 +141,8 @@ function init_gear_sets()
         waist="Eschan Stone",
         left_ear="Thrud Earring",
         right_ear="Moonshade Earring",
-        left_ring="Karieyh Ring",
-        right_ring="Flamma Ring",
+        left_ring="Flamma Ring",
+        right_ring="Karieyh Ring",
         back=gear.ws_jse_back,
     }
 
@@ -157,8 +157,8 @@ function init_gear_sets()
         waist="Eschan Stone",
         left_ear="Thrud Earring",
         right_ear="Moonshade Earring",
-        left_ring="Karieyh Ring",
-        right_ring="Flamma Ring",
+        left_ring="Flamma Ring",
+        right_ring="Karieyh Ring",
         back=gear.ws_jse_back,
     }
 
@@ -173,8 +173,8 @@ function init_gear_sets()
         waist="Eschan Stone",
         left_ear="Thrud Earring",
         right_ear="Moonshade Earring",
-        left_ring="Karieyh Ring",
-        right_ring="Flamma Ring",
+        left_ring="Flamma Ring",
+        right_ring="Karieyh Ring",
         back=gear.ws_jse_back,
     }
 
@@ -363,8 +363,8 @@ function init_gear_sets()
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",
         right_ear="Bladeborn Earring",
-        left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        left_ring="Flamma Ring",
+        right_ring="Petrov Ring",
         back=gear.stp_jse_back,
     }
     sets.engaged.Acc = {ammo="Aurgelmir Orb +1",
