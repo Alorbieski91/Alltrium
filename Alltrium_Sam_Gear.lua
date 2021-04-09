@@ -84,7 +84,9 @@ function init_gear_sets()
         back=gear.ws_jse_back,
     }
 
-    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {feet="Wakido Sune. +3"})
+    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {
+        --feet="Wakido Sune. +3"
+    })
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Wakido Kabuto +3",body="Sakonji Domaru +3",feet="Wakido Sune. +3"})
     sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Wakido Kabuto +3",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",body="Sakonji Domaru +3",hands="Wakido Kote +3",ring1="Ramuh Ring +1",feet="Wakido Sune. +3"})
     sets.precast.WS.Fodder = set_combine(sets.precast.WS, {})
@@ -252,7 +254,7 @@ function init_gear_sets()
         head=gear.valorous_wsd_head,
         body="Hiza. Haramaki +1",
         hands="Wakido Kote +2",
-        legs="Ryuo Hakama",
+        legs="Ken. Hakama",
         feet="Flam. Gambieras +2",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
@@ -270,7 +272,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Hiza. Haramaki +1",
         hands="Wakido Kote +2",
-        legs="Ryuo Hakama",
+        legs="Ken. Hakama",
         feet="Flam. Gambieras +2",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
@@ -292,7 +294,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Hiza. Haramaki +1",
         hands="Wakido Kote +2",
-        legs="Ryuo Hakama",
+        legs="Ken. Hakama",
         feet="Flam. Gambieras +2",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
@@ -310,7 +312,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Hiza. Haramaki +1",
         hands="Wakido Kote +2",
-        legs="Ryuo Hakama",
+        legs="Ken. Hakama",
         feet="Flam. Gambieras +2",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
@@ -357,7 +359,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Kasuga Domaru +1",
         hands="Wakido Kote +2",
-        legs="Ryuo Hakama",
+        legs="Ken. Hakama",
         feet="Flam. Gambieras +2",
         neck="Sam. Nodowa +1",
         waist="Ioskeha Belt",
