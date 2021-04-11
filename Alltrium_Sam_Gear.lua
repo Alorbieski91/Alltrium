@@ -137,7 +137,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Flamma Korazin +2",
         hands="Flam. Manopolas +2",
-        legs="Flamma Dirs +1",
+        legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sanctity Necklace",
         waist="Eschan Stone",
@@ -153,7 +153,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Flamma Korazin +2",
         hands="Flam. Manopolas +2",
-        legs="Flamma Dirs +1",
+        legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sanctity Necklace",
         waist="Eschan Stone",
@@ -169,7 +169,7 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",
         body="Flamma Korazin +2",
         hands="Flam. Manopolas +2",
-        legs="Flamma Dirs +1",
+        legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sam. Nodowa +1",
         waist="Eschan Stone",
@@ -493,7 +493,7 @@ function init_gear_sets()
 	sets.weapons.Bow = {main="Kaja Lance",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
 
 	-- Buff sets
-	sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +1"}
+	sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Vim Torque +1"}
 	sets.buff.Hasso = {hands="Wakido Kote +2"}

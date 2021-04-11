@@ -68,7 +68,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {
         sub="Lanun Knife",
         head="Lanun Tricorne +1",
-        body="Meg. Cuirie +1",
+        body="Meg. Cuirie +2",
         hands="Chasseur's Gants +1",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -218,7 +218,7 @@ function init_gear_sets()
     sets.precast.WS.Acc = {
         ammo=gear.WSbullet,
         head="Meghanada Visor +2",
-        body="Meg. Cuirie +1",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Meg. Chausses +2",
         feet="Meg. Jam. +2",
@@ -481,7 +481,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {
         head="Meghanada Visor +2",
-        body="Lanun Frac +3",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -496,7 +496,7 @@ function init_gear_sets()
 
     sets.idle.PDT = {
         head="Meghanada Visor +2",
-        body="Lanun Frac +3",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -516,7 +516,7 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
         head="Meghanada Visor +2",
-        body="Lanun Frac +3",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -531,7 +531,7 @@ function init_gear_sets()
 
     sets.defense.MDT = {
         head="Meghanada Visor +2",
-        body="Lanun Frac +3",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -546,7 +546,7 @@ function init_gear_sets()
 
     sets.defense.MEVA = {
         head="Meghanada Visor +2",
-        body="Lanun Frac +3",
+        body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -609,7 +609,7 @@ function init_gear_sets()
 
     sets.engaged.DT = {
         head="Adhemar Bonnet +1",
-        body="Meg. Cuirie +1",
+        body="Meg. Cuirie +2",
         hands="Adhemar Wrist. +1",
         legs="Malignance Tights",
         feet="Malignance Boots",
@@ -662,7 +662,7 @@ function init_gear_sets()
 
     sets.engaged.DW.DT = {
         head="Adhemar Bonnet +1",
-        body="Meg. Cuirie +1",
+        body="Meg. Cuirie +2",
         hands="Adhemar Wrist. +1",
         legs="Malignance Tights",
         feet="Malignance Boots",
