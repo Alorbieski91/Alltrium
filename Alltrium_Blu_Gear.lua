@@ -10,7 +10,7 @@ function user_job_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')
 
-    state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
+	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
 	gear.da_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 	gear.stp_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
@@ -70,10 +70,10 @@ function init_gear_sets()
 
 
 	-- Waltz set (chr and vit)
-    sets.precast.Waltz = {ammo="Staunch Tathlum +1",
-        head="Carmine Mask +1",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
-        body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+	sets.precast.Waltz = {ammo="Staunch Tathlum +1",
+		head="Carmine Mask +1",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
+		body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
+		back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 
 	sets.Self_Waltz = {body="Passion Jacket",ring1="Asklepian Ring"}
 
@@ -287,8 +287,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Physical.Resistant = {main="Sequence",sub="Almace",ammo="Falcon Eye",
 		head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+		body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Physical.Fodder = {main="Iris",sub="Iris",ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +1",neck="Mirage Stole +2",ear1="Suppanomimi",ear2="Telos Earring",
@@ -297,8 +297,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {main="Sequence",sub="Almace",ammo="Falcon Eye",
 		head="Jhakri Coronal +1",neck="Mirage Stole",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Malignance Boots"}
+		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Malignance Boots"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})
 	sets.midcast['Blue Magic'].PhysicalAcc.Fodder = sets.midcast['Blue Magic'].Fodder
@@ -715,10 +715,10 @@ function init_gear_sets()
 
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 
-    -- Extra Melee sets.  Apply these on top of melee sets.
-    sets.Knockback = {}
-    sets.MP = {waist="Flume Belt +1",ear1="Suppanomimi", ear2="Ethereal Earring"}
-    sets.MP_Knockback = {}
+	-- Extra Melee sets.  Apply these on top of melee sets.
+	sets.Knockback = {}
+	sets.MP = {waist="Flume Belt +1",ear1="Suppanomimi", ear2="Ethereal Earring"}
+	sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",waist="Reiki Yotai",legs="Carmine Cuisses +1"}

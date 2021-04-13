@@ -5,22 +5,22 @@ function user_job_setup()
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc')
     state.RangedMode:options('Normal', 'Acc')
     state.PhysicalDefenseMode:options('PDT','PDTReraise')
-	state.MagicalDefenseMode:options('MDT','MDTReraise')
-	state.ResistDefenseMode:options('MEVA')
+    state.MagicalDefenseMode:options('MDT','MDTReraise')
+    state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
-	state.Weapons:options('Dojikiri','ProcWeapon','Bow')
+    state.Weapons:options('Dojikiri','ProcWeapon','Bow')
 
-	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+    gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+    gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
     -- Additional local binds
     send_command('bind ^` input /ja "Hasso" <me>')
     send_command('bind !` input /ja "Seigan" <me>')
-	send_command('bind !backspace input /ja "Third Eye" <me>')
-	send_command('bind @` gs c cycle SkillchainMode')
-	send_command('bind !@^` gs c cycle Stance')
-	send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
-	send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
-	send_command('bind ^q gs c weapons Bow;gs c update')
+    send_command('bind !backspace input /ja "Third Eye" <me>')
+    send_command('bind @` gs c cycle SkillchainMode')
+    send_command('bind !@^` gs c cycle Stance')
+    send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
+    send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
+    send_command('bind ^q gs c weapons Bow;gs c update')
 
     lockstyleset = 3
 
@@ -39,8 +39,8 @@ function init_gear_sets()
     sets.precast.JA.Meditate = {head="Wakido Kabuto +1",hands="Sakonji Kote",back=gear.ws_jse_back}
     sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +1"}
     sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote"}
-	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
-	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
+    sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
+    sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
 
     sets.precast.Step = {
         head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
@@ -190,13 +190,13 @@ function init_gear_sets()
     sets.precast.WS['Apex Arrow'].FullAcc = set_combine(sets.precast.WS['Apex Arrow'], {})
     sets.precast.WS['Apex Arrow'].Fodder = set_combine(sets.precast.WS['Apex Arrow'], {})
 
-	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Thrud Earring",ear2="Lugra Earring +1",}
-	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
-	sets.AccDayMaxTPWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
-	sets.DayMaxTPWSEars = {ear1="Thrud Earring",ear2="Brutal Earring",}
-	sets.AccDayWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
-	sets.DayWSEars = {ear1="Thrud Earring",ear2="Moonshade Earring",}
+    -- Swap to these on Moonshade using WS if at 3000 TP
+    sets.MaxTP = {ear1="Thrud Earring",ear2="Lugra Earring +1",}
+    sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
+    sets.AccDayMaxTPWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
+    sets.DayMaxTPWSEars = {ear1="Thrud Earring",ear2="Brutal Earring",}
+    sets.AccDayWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
+    sets.DayWSEars = {ear1="Thrud Earring",ear2="Moonshade Earring",}
 
     -- Midcast Sets
     sets.midcast.FastRecast = {
@@ -323,7 +323,7 @@ function init_gear_sets()
         back=gear.stp_jse_back,
     }
 
-	  sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
+    sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
 
     sets.defense.MEVA = {
 
@@ -431,7 +431,7 @@ function init_gear_sets()
     -- Melee sets for in Adoulin, which has an extra 10 Save TP for weaponskills.
     -- Delay 450 GK, 35 Save TP => 89 Store TP for a 4-hit (49 Store TP in gear), 2 Store TP for a 5-hit
 --[[Right now Adoulin sets are the same as non-Adoulin.
-	sets.engaged.Adoulin = {
+    sets.engaged.Adoulin = {
         sub="Nepenthe Grip",
         ammo="Ginsen",
         head="Flam. Zucchetto +2",
@@ -450,7 +450,7 @@ function init_gear_sets()
     sets.engaged.Adoulin.SomeAcc = {
 
     }
-	  sets.engaged.Adoulin.Acc = {
+    sets.engaged.Adoulin.Acc = {
 
     }
     sets.engaged.Adoulin.FullAcc = {
@@ -465,7 +465,7 @@ function init_gear_sets()
     sets.engaged.Adoulin.SomeAcc.PDT = {
 
     }
-		sets.engaged.Adoulin.Acc.PDT = {
+    sets.engaged.Adoulin.Acc.PDT = {
 
     }
     sets.engaged.Adoulin.FullAcc.PDT = {
@@ -475,7 +475,7 @@ function init_gear_sets()
 
     }
 
-	sets.engaged.Adoulin.DTLite = sets.engaged.DTLite
+    sets.engaged.Adoulin.DTLite = sets.engaged.DTLite
     sets.engaged.Adoulin.SomeAcc.DTLite = sets.engaged.SomeAcc.DTLite
     sets.engaged.Adoulin.Acc.DTLite = sets.engaged.Acc.DTLite
     sets.engaged.Adoulin.FullAcc.DTLite = sets.engaged.FullAcc.DTLite
@@ -487,17 +487,17 @@ function init_gear_sets()
     sets.engaged.Adoulin.Fodder.Reraise = set_combine(sets.engaged.Adoulin.Fodder, sets.Reraise)
 ]]--Right now Adoulin sets are the same as non-Adoulin.
 
-	-- Weapons sets
-	sets.weapons.Dojikiri = {main="Ichigohitofuri",sub="Nepenthe Grip"}
-	sets.weapons.ProcWeapon = {main="Norifusa +1",sub="Bloodrain Strap"}
-	sets.weapons.Bow = {main="Kaja Lance",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
+    -- Weapons sets
+    sets.weapons.Dojikiri = {main="Ichigohitofuri",sub="Nepenthe Grip"}
+    sets.weapons.ProcWeapon = {main="Norifusa +1",sub="Bloodrain Strap"}
+    sets.weapons.Bow = {main="Kaja Lance",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
 
-	-- Buff sets
-	sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {neck="Vim Torque +1"}
-	sets.buff.Hasso = {hands="Wakido Kote +2"}
-	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
+    -- Buff sets
+    sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}
+    sets.buff.Doom = set_combine(sets.buff.Doom, {})
+    sets.buff.Sleep = {neck="Vim Torque +1"}
+    sets.buff.Hasso = {hands="Wakido Kote +2"}
+    sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
     sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
     sets.buff.Sengikori = {feet="Kas. Sune-Ate +1"}
     sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +1"}
@@ -521,39 +521,39 @@ end
 
 --Job Specific Trust Overwrite
 function check_trust()
-	if not moving then
-		if state.AutoTrustMode.value and not data.areas.cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
-			local party = windower.ffxi.get_party()
-			if party.p5 == nil then
-				local spell_recasts = windower.ffxi.get_spell_recasts()
+    if not moving then
+        if state.AutoTrustMode.value and not data.areas.cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
+            local party = windower.ffxi.get_party()
+            if party.p5 == nil then
+                local spell_recasts = windower.ffxi.get_spell_recasts()
 
-				if spell_recasts[980] < spell_latency and not have_trust("Yoran-Oran") then
-					windower.send_command('input /ma "Yoran-Oran (UC)" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[952] < spell_latency and not have_trust("Koru-Moru") then
-					windower.send_command('input /ma "Koru-Moru" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[967] < spell_latency and not have_trust("Qultada") then
-					windower.send_command('input /ma "Qultada" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[914] < spell_latency and not have_trust("Ulmia") then
-					windower.send_command('input /ma "Ulmia" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[979] < spell_latency and not have_trust("Selh'teus") then
-					windower.send_command('input /ma "Selh\'teus" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				else
-					return false
-				end
-			end
-		end
-	end
-	return false
+                if spell_recasts[980] < spell_latency and not have_trust("Yoran-Oran") then
+                    windower.send_command('input /ma "Yoran-Oran (UC)" <me>')
+                    tickdelay = os.clock() + 3
+                    return true
+                elseif spell_recasts[952] < spell_latency and not have_trust("Koru-Moru") then
+                    windower.send_command('input /ma "Koru-Moru" <me>')
+                    tickdelay = os.clock() + 3
+                    return true
+                elseif spell_recasts[967] < spell_latency and not have_trust("Qultada") then
+                    windower.send_command('input /ma "Qultada" <me>')
+                    tickdelay = os.clock() + 3
+                    return true
+                elseif spell_recasts[914] < spell_latency and not have_trust("Ulmia") then
+                    windower.send_command('input /ma "Ulmia" <me>')
+                    tickdelay = os.clock() + 3
+                    return true
+                elseif spell_recasts[979] < spell_latency and not have_trust("Selh'teus") then
+                    windower.send_command('input /ma "Selh\'teus" <me>')
+                    tickdelay = os.clock() + 3
+                    return true
+                else
+                    return false
+                end
+            end
+        end
+    end
+    return false
 end
 
 function set_lockstyle()
