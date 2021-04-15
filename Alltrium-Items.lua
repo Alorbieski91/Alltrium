@@ -11,7 +11,7 @@ sets.buff.Doom = {
 }
 sets.TreasureHunter = {
     --head="Wh. Rarab Cap +1",
-    --waist="Chaac Belt"
+    waist="Chaac Belt"
 }
 
 sets.precast.Item['Hallowed Water'] = {}
