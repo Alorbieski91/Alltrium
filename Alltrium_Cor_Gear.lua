@@ -159,11 +159,11 @@ function init_gear_sets()
 
     sets.precast.FC = {
         --head="Carmine Mask +1", --14
-        head=gear.herculean_wsd_head,
-        --body=gear.Taeon_FC_body, --9
+        head=gear.herculean_wsd_head, --7
+        body="Adhemar Jacket", --7
         --hands="Leyline Gloves", --8
         legs="Rawhide Trousers", --5
-        feet="Carmine Greaves", --8
+        feet="Carmine Greaves", --7
         --neck="Orunmila's Torque", --5
         ear1="Etiolation Earring", --2
         ear2="Loquac. Earring", --2
@@ -564,7 +564,7 @@ function init_gear_sets()
     sets.DWMax = {
         --ear1="Dudgeon Earring",
         --ear2="Heartseeker Earring",
-        body="Adhemar Jacket",
+        body="Adhemar Jacket +1",
         --hands="Floral Gauntlets",
         --waist="Reiki Yotai"
     }
@@ -589,7 +589,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
         head="Adhemar Bonnet +1",
-        body="Adhemar Jacket",
+        body="Adhemar Jacket +1",
         hands="Adhemar Wrist. +1",
         legs="Carmine Cuisses +1",
         feet=gear.herculean_ta_feet,
@@ -629,7 +629,7 @@ function init_gear_sets()
 
     sets.engaged.DW = {
         head="Adhemar Bonnet +1",
-        body="Adhemar Jacket",
+        body="Adhemar Jacket +1",
         hands="Adhemar Wrist. +1",
         legs="Carmine Cuisses +1",
         feet=gear.herculean_ta_feet,
@@ -647,7 +647,7 @@ function init_gear_sets()
         --body="Malignance Tabard",hands="Floral Gauntlets",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         --back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"
         head="Adhemar Bonnet +1",
-        body="Adhemar Jacket",
+        body="Adhemar Jacket +1",
         hands="Adhemar Wrist. +1",
         legs="Carmine Cuisses +1",
         feet="Malignance Boots",
