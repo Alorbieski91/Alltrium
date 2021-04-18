@@ -65,9 +65,15 @@ gear.merlinic_treasure_feet = {name="Merlinic Crackows",augments={'Accuracy+5','
 gear.merlinic_refresh_feet = {name="Merlinic Crackows",augments={'Pet: DEX+7','Pet: Mag. Acc.+7','"Refresh"+2','Accuracy+20 Attack+20',}}
 gear.merlinic_occult_feet = {name="Merlinic Crackows",augments={'"Occult Acumen"+11','INT+8','Mag. Acc.+4',}}
 
-gear.odyssean_wsd_hands = { name="Odyssean Gauntlets",augments={'Accuracy+26','Weapon skill damage +4%','STR+6','Attack+14',}}
+gear.odyssean_wsd_hands = {name="Odyssean Gauntlets",augments={'Accuracy+26','Weapon skill damage +4%','STR+6','Attack+14',}}
 gear.odyssean_stp_legs = {name="Odyssean Cuisses",augments={'Accuracy+28','"Store TP"+6','DEX+9',}}
 gear.odyssean_fc_legs = {name="Odyssean Cuisses",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}}
+
+gear.telchine_whitewind_head = {name="Telchine Cap",augments={'"Cure" potency +8%','HP+48',}}
+gear.telchine_whitewind_body = {name="Telchine Chas.",augments={'"Cure" potency +5%','HP+50',}}
+gear.telchine_whitewind_hands = {name="Telchine Gloves",augments={'"Cure" potency +5%','HP+46',}}
+gear.telchine_whitewind_legs = {name="Telchine Braconi",augments={'"Cure" potency +6%','HP+39',}}
+gear.telchine_whitewind_feet = {name="Telchine Pigaches",augments={'"Cure" potency +7%','HP+35',}}
 
 gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
 gear.valorous_wsd_head = {name="Valorous Mask",augments={'Accuracy+25','Pet: VIT+5','Weapon skill damage +4%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}}

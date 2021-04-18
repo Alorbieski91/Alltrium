@@ -5,7 +5,7 @@ function user_job_setup()
     state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder')
     state.CastingMode:options('Normal','Resistant','Fodder','Proc')
     state.IdleMode:options('Normal','Sphere','PDT','DTHippo')
-	state.PhysicalDefenseMode:options('PDT')
+	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')
@@ -515,13 +515,13 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic']['White Wind'] = {
 		ammo="Ginsen",
-		head="Telchine Cap",
-		body="Assim. Jubbah +2",
-		hands="Telchine Gloves",
-		legs="Aya. Cosciales +1",
-		feet="Carmine Greaves",
+		head=gear.telchine_whitewind_head,
+		body=gear.telchine_whitewind_body,
+		hands=gear.telchine_whitewind_hands,
+		legs=gear.telchine_whitewind_legs,
+		feet=gear.telchine_whitewind_feet,
 		neck="Sanctity Necklace",
-		waist="Flume Belt +1",
+		waist="Eschan Stone",
 		left_ear="Odnowa Earring",
 		right_ear="Mendi. Earring",
 		left_ring="Kunaji Ring",
@@ -533,11 +533,11 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Healing = {
 		ammo="Ginsen",
-		head="Jhakri Coronal +1",
-		body="Assim. Jubbah +2",
-		hands="Telchine Gloves",
-		legs="Jhakri Slops +1",
-		feet="Jhakri Pigaches +1",
+		head=gear.telchine_whitewind_head,
+		body=gear.telchine_whitewind_body,
+		hands=gear.telchine_whitewind_hands,
+		legs=gear.telchine_whitewind_legs,
+		feet=gear.telchine_whitewind_feet,
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Hecate's Earring",
