@@ -71,7 +71,7 @@ function init_gear_sets()
     sets.precast.WS = {
         ammo="Knobkierrie",
         head=gear.valorous_wsd_head,
-        body="Flamma Korazin +2",
+        body="Sakonji Domaru +2",
         hands=gear.valorous_wsd_hands,
         legs="Hiza. Hizayoroi +2",
         feet=gear.valorous_wsd_feet,
@@ -87,7 +87,7 @@ function init_gear_sets()
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {
         --feet="Wakido Sune. +3"
     })
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Wakido Kabuto +3",body="Sakonji Domaru +3",feet="Wakido Sune. +3"})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Wakido Kabuto +3",body="Sakonji Domaru +2",feet="Wakido Sune. +3"})
     sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Wakido Kabuto +3",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",body="Sakonji Domaru +3",hands="Wakido Kote +3",ring1="Ramuh Ring +1",feet="Wakido Sune. +3"})
     sets.precast.WS.Fodder = set_combine(sets.precast.WS, {})
 
