@@ -370,10 +370,26 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = {main="Iris",sub="Iris",ammo="Pemphredo Tathlum",
-		head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+	sets.midcast['Blue Magic'].MagicAccuracy = {
+		--main="Iris",sub="Iris",ammo="Pemphredo Tathlum",
+		--head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
+		--body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
+		--back="Cornflower Cape",waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"
+		main="Iris",
+		sub="Iris",
+		head="Jhakri Coronal +1",
+		body="Jhakri Robe +2",
+		hands="Jhakri Cuffs +2",
+		legs="Jhakri Slops +1",
+		feet="Jhakri Pigaches +1",
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Hecate's Earring",
+		right_ear="Friomisi Earring",
+		left_ring="Acumen Ring",
+		right_ring="Shiva Ring",
+		back=gear.nuke_jse_back,
+	}
 
 	sets.midcast['Enfeebling Magic'] = {
 		ammo="Ghastly Tathlum",
