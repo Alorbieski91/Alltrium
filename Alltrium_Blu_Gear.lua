@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')
+	state.Weapons:options('Tizalmace','MaccWeapons','MagicWeapons','Almace','Sequence','None','MeleeClubs','HybridWeapons')
 
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -126,24 +126,24 @@ function init_gear_sets()
 	}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
-				  head="Carmine Mask +1",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Telos Earring",
-				  body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Epona's Ring",ring2="Ilabrat Ring",
-			      back=gear.da_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
+		head="Carmine Mask +1",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Telos Earring",
+		body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Epona's Ring",ring2="Ilabrat Ring",
+		back=gear.da_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
 
 	sets.precast.WS.FullAcc = {ammo="Falcon Eye",
-				  head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Odr Earring",
-				  body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-			      back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Odr Earring",
+		body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
-				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Ilabrat Ring",
-				  back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Ilabrat Ring",
+		back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
-				  head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Adhemar Jacket +1",hands="Jhakri Cuffs +2",ring1="Epona's Ring",ring2="Apate Ring",
-				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+		head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+		body="Adhemar Jacket +1",hands="Jhakri Cuffs +2",ring1="Epona's Ring",ring2="Apate Ring",
+		back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +1",ear1="Regal Earring",body="Jhakri Robe +2",ring2="Rufescent Ring",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"})
@@ -377,18 +377,19 @@ function init_gear_sets()
 		--back="Cornflower Cape",waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"
 		main="Iris",
 		sub="Iris",
+		ammo="Ginsen",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
 		legs="Jhakri Slops +1",
 		feet="Jhakri Pigaches +1",
-		neck="Sanctity Necklace",
+		neck="Mirage Stole",
 		waist="Eschan Stone",
-		left_ear="Hecate's Earring",
-		right_ear="Friomisi Earring",
-		left_ring="Acumen Ring",
-		right_ring="Shiva Ring",
-		back=gear.nuke_jse_back,
+		left_ear="Gwati Earring",
+		right_ear="Njordr Earring",
+		left_ring="Stikini Ring",
+		right_ring="Sangoma Ring",
+		back="Cornflower Cape",
 	}
 
 	sets.midcast['Enfeebling Magic'] = {
@@ -741,10 +742,10 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 
 	-- Weapons sets
-	sets.weapons.Tizalmace = {main="Naegling",sub="Colada"}
-	sets.weapons.Tizbron = {main="Tizona",sub="Thibron"}
+	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
+	sets.weapons.Tizbron = {main="Tizona",sub="Machaera +2"}
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
-	sets.weapons.Almace = {main="Naegling",sub="Machaera +2"}
+	sets.weapons.Almace = {main="Naegling",sub="Colada"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
 	sets.weapons.MagicWeapons = {main="Colada",sub="Nibiru Cudgel"}
