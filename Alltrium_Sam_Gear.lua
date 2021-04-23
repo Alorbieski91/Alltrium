@@ -167,8 +167,8 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Jinpu'] = {
         ammo="Knobkierrie",
         head="Flam. Zucchetto +2",
-        body="Flamma Korazin +2",
-        hands="Flam. Manopolas +2",
+        body="Found. Breastplate",
+        hands="Founder's Gauntlets",
         legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sam. Nodowa +1",
