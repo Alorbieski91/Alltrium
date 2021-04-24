@@ -171,7 +171,7 @@ function init_gear_sets()
 		right_ear="Odr Earring",
 		left_ring="Begrudging Ring",
 		right_ring="Epona's Ring",
-		back=gear.stp_jse_back,
+		back=gear.crit_jse_back,
 	})
 
 	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {
@@ -187,7 +187,7 @@ function init_gear_sets()
 		right_ear="Odr Earring",
 		left_ring="Begrudging Ring",
 		right_ring="Epona's Ring",
-		back=gear.stp_jse_back,
+		back=gear.crit_jse_back,
 	})
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
