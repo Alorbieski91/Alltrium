@@ -174,7 +174,21 @@ function init_gear_sets()
 		back=gear.stp_jse_back,
 	})
 
-	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",ear2="Odr Earring",ring2="Begrudging Ring",body="Sayadio's Kaftan",back=gear.crit_jse_back,legs="Carmine Cuisses +1"})
+	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {
+		ammo="Falcon Eye",
+		head="Adhemar Bonnet +1",
+		body="Adhemar Jacket +1",
+		hands="Adhemar Wrist. +1",
+		legs=gear.herculean_ta_legs,
+		feet="Malignance Boots",
+		neck="Mirage Stole",
+		waist="Fotia Belt",
+		left_ear="Mache Earring +1",
+		right_ear="Odr Earring",
+		left_ring="Begrudging Ring",
+		right_ring="Epona's Ring",
+		back=gear.stp_jse_back,
+	})
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
@@ -195,7 +209,21 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,
 	})
 
-	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet=gear.herculean_wsd_feet})
+	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {
+		ammo="Mantoptera Eye",
+		head=gear.herculean_wsd_head,
+		body="Assim. Jubbah +2",
+		hands="Jhakri Cuffs +2",
+		legs=gear.herculean_wsd_legs,
+		feet="Jhakri Pigaches +1",
+		neck="Mirage Stole",
+		waist="Fotia Belt",
+		left_ear="Ishvara Earring",
+		right_ear="Moonshade Earring",
+		left_ring="Karieyh Ring",
+		right_ring="Rufescent Ring",
+		back=gear.wsd_jse_back,	
+	})
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.wsd_jse_back})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {})
