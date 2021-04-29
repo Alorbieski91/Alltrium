@@ -353,7 +353,7 @@ function init_gear_sets()
         right_ring="Petrov Ring",
         back=gear.stp_jse_back,
     }
-    
+
     sets.engaged.SomeAcc = {
         ammo="Ginsen",
         head="Flam. Zucchetto +2",
@@ -401,7 +401,7 @@ function init_gear_sets()
         head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"}
-	sets.engaged.DTLite = {
+    sets.engaged.DTLite = {
         --ammo="Staunch Tathlum +1",
         --head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
         --body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
@@ -418,7 +418,7 @@ function init_gear_sets()
         right_ear="Odnowa Earring",
         left_ring="Gelatinous Ring +1",
         right_ring="Defending Ring",
-        back=gear.stp_jse_back,    
+        back=gear.stp_jse_back,
     }
     sets.engaged.SomeAcc.DTLite = {ammo="Staunch Tathlum +1",
         head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
