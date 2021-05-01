@@ -13,8 +13,8 @@ function user_job_setup()
     autows = 'Savage Blade'
     autofood = 'Grape Daifuku'
 
-    gear.RAbullet = "Decimating Bullet"
-    gear.WSbullet = "Decimating Bullet"
+    gear.RAbullet = "Chrono Bullet"
+    gear.WSbullet = "Chrono Bullet"
     gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Animikii Bullet"
     options.ammo_warning_limit = 15
@@ -573,11 +573,11 @@ function init_gear_sets()
     sets.weapons.Default = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
     sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
     sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
-    sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Holliday"}
-    sets.weapons.DualLeadenMelee = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
+    sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Fomalhaut"}
+    sets.weapons.DualLeadenMelee = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
     sets.weapons.DualAeolian = {main="Lanun Knife",sub="Tauret",range="Anarchy +2"}
-    sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
-    sets.weapons.DualRanged = {main="Kustawi +1",sub="Nusku Shield",range="Holliday"}
+    sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
+    sets.weapons.DualRanged = {main="Kustawi +1",sub="Nusku Shield",range="Fomalhaut"}
 
     -- Engaged sets
 

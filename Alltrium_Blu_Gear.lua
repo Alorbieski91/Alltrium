@@ -1,10 +1,10 @@
 function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('Normal','Acc','FullAcc','Fodder')
+	state.OffenseMode:options('Normal','Acc','FullAcc','Fodder')
 	state.HybridMode:options('Normal','DT')
-    state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder')
-    state.CastingMode:options('Normal','Resistant','Fodder','Proc')
-    state.IdleMode:options('Normal','Sphere','PDT','DTHippo')
+	state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder')
+	state.CastingMode:options('Normal','Resistant','Fodder','Proc')
+	state.IdleMode:options('Normal','Sphere','PDT','DTHippo')
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -740,7 +740,7 @@ function init_gear_sets()
 		back=gear.stp_jse_back,
 	}
 
-    sets.defense.MEVA = {
+	sets.defense.MEVA = {
 		ammo="Ginsen",
 		head="Rawhide Mask",
 		body="Assim. Jubbah +2",
@@ -776,7 +776,7 @@ function init_gear_sets()
 	sets.weapons.Almace = {main="Naegling",sub="Colada"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
-	sets.weapons.MagicWeapons = {main="Colada",sub="Nibiru Cudgel"}
+	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
