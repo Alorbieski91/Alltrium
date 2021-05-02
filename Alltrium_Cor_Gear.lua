@@ -573,7 +573,7 @@ function init_gear_sets()
     sets.weapons.Default = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
     sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
     sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
-    sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Fomalhaut"}
+    sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Molybdosis"}
     sets.weapons.DualLeadenMelee = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
     sets.weapons.DualAeolian = {main="Lanun Knife",sub="Tauret",range="Anarchy +2"}
     sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
