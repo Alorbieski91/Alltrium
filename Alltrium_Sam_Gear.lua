@@ -8,7 +8,7 @@ function user_job_setup()
     state.MagicalDefenseMode:options('MDT','MDTReraise')
     state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
-    state.Weapons:options('Dojikiri','ProcWeapon','Bow')
+    state.Weapons:options('Dojikiri','ProcWeapon','Lance')
 
     gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
     gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
@@ -20,7 +20,7 @@ function user_job_setup()
     send_command('bind !@^` gs c cycle Stance')
     send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
     send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
-    send_command('bind ^q gs c weapons Bow;gs c update')
+    send_command('bind ^q gs c weapons Lance;gs c update')
 
     lockstyleset = 3
 
@@ -85,7 +85,7 @@ function init_gear_sets()
     }
 
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",})
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",ear2="Mache Earring +1"})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",ear2="Digni. Earring"})
     sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {})
     sets.precast.WS.Fodder = set_combine(sets.precast.WS, {})
 
@@ -381,7 +381,7 @@ function init_gear_sets()
         neck="Sam. Nodowa +1",
         waist="Ioskeha Belt",
         left_ear="Cessance Earring",
-        right_ear="Mache Earring +1",
+        right_ear="Digni. Earring",
         left_ring="Flamma Ring",
         right_ring="Petrov Ring",
         back=gear.stp_jse_back,
@@ -466,7 +466,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         waist="Ioskeha Belt",
         left_ear="Cessance Earring",
-        right_ear="Brutal Earring",
+        right_ear="Digni. Earring",
         left_ring="Gelatinous Ring +1",
         right_ring="Defending Ring",
         back=gear.stp_jse_back,
@@ -546,9 +546,9 @@ function init_gear_sets()
 ]]--Right now Adoulin sets are the same as non-Adoulin.
 
     -- Weapons sets
-    sets.weapons.Dojikiri = {main="Ichigohitofuri",sub="Nepenthe Grip"}
-    sets.weapons.ProcWeapon = {main="Norifusa +1",sub="Bloodrain Strap"}
-    sets.weapons.Bow = {main="Kaja Lance",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
+    sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Nepenthe Grip"}
+    sets.weapons.ProcWeapon = {main="Soboro Sukehiro",sub="Nepenthe Grip"}
+    sets.weapons.Lance = {main="Kaja Lance",sub="Nepenthe Grip"}
 
     -- Buff sets
     sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}

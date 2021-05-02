@@ -135,10 +135,10 @@ function init_gear_sets()
         feet="Malignance Boots",
         neck="Comm. Charm +1",
         waist="K. Kachina Belt +1",
-        left_ear="Friomisi Earring",
-        right_ear="Hecate's Earring",
+        left_ear="Digni. Earring",
+        right_ear="Gwati Earring",
         left_ring="Mummu Ring",
-        right_ring="Dingir Ring",
+        right_ring="Stikini Ring",
         back=gear.magic_wsd_jse_back,
     }
 
@@ -164,7 +164,7 @@ function init_gear_sets()
         --hands="Leyline Gloves", --8
         legs="Rawhide Trousers", --5
         feet="Carmine Greaves", --7
-        --neck="Orunmila's Torque", --5
+        neck="Voltsurge Torque", --5
         ear1="Etiolation Earring", --2
         ear2="Loquac. Earring", --2
         --ring1="Weather. Ring", --6(4)
