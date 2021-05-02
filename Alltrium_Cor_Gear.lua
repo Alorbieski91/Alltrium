@@ -132,7 +132,7 @@ function init_gear_sets()
         body="Mummu Jacket +2",
         hands="Mummu Wrists +1",
         legs="Malignance Tights",
-        feet="Malignance Boots",
+        feet="Laksa. Bottes  +2",
         neck="Comm. Charm +1",
         waist="K. Kachina Belt +1",
         left_ear="Digni. Earring",
