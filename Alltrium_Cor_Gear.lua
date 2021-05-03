@@ -161,13 +161,13 @@ function init_gear_sets()
         --head="Carmine Mask +1", --14
         head=gear.herculean_wsd_head, --7
         body="Adhemar Jacket", --7
-        --hands="Leyline Gloves", --8
+        hands="Leyline Gloves", --8
         legs="Rawhide Trousers", --5
         feet="Carmine Greaves", --7
         neck="Voltsurge Torque", --5
         ear1="Etiolation Earring", --2
         ear2="Loquac. Earring", --2
-        --ring1="Weather. Ring", --6(4)
+        ring1="Rahab Ring", --6(4)
         --ring2="Kishar Ring", --4
     }
 
