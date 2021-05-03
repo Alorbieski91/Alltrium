@@ -434,7 +434,7 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {
-        head="Meghanada Visor +2",
+        head="Malignance Chapeau",
         body="Laksa. Frac +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
@@ -608,7 +608,7 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
     sets.engaged.DT = {
-        head="Adhemar Bonnet +1",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
         hands="Adhemar Wrist. +1",
         legs="Malignance Tights",
@@ -661,7 +661,7 @@ function init_gear_sets()
     }
 
     sets.engaged.DW.DT = {
-        head="Adhemar Bonnet +1",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
         hands="Adhemar Wrist. +1",
         legs="Malignance Tights",

@@ -688,7 +688,7 @@ function init_gear_sets()
 
 	sets.idle.PDT = {
 		ammo="Ginsen",
-		head="Rawhide Mask",
+		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Assim. Bazu. +2",
 		legs="Malignance Tights",
@@ -710,7 +710,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {
 		ammo="Ginsen",
-		head="Rawhide Mask",
+		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Assim. Bazu. +2",
 		legs="Malignance Tights",
@@ -726,7 +726,7 @@ function init_gear_sets()
 
 	sets.defense.MDT = {
 		ammo="Ginsen",
-		head="Rawhide Mask",
+		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Assim. Bazu. +2",
 		legs="Malignance Tights",
@@ -742,7 +742,7 @@ function init_gear_sets()
 
 	sets.defense.MEVA = {
 		ammo="Ginsen",
-		head="Rawhide Mask",
+		head="Malignance Chapeau",
 		body="Assim. Jubbah +2",
 		hands="Assim. Bazu. +2",
 		legs="Malignance Tights",
@@ -913,7 +913,7 @@ function init_gear_sets()
 
 	sets.engaged.DT = {
 		ammo="Ginsen",
-		head="Adhemar Bonnet +1",
+		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Adhemar Wrist. +1",
 		legs="Malignance Tights",
@@ -953,7 +953,7 @@ function init_gear_sets()
 		--body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
 		--back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"
 		ammo="Ginsen",
-		head="Adhemar Bonnet +1",
+		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Adhemar Wrist. +1",
 		legs="Malignance Tights",
