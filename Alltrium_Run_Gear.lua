@@ -16,6 +16,8 @@ function user_job_setup()
 	gear.stp_jse_back = {name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.da_jse_back = {name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 
+	autows = 'Dimidiation'
+
 	-- Additional local binds
 	send_command('bind !` gs c SubJobEnmity')
 	send_command('bind @` gs c cycle RuneElement')
