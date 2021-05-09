@@ -22,10 +22,7 @@ function user_job_setup()
     send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
     send_command('bind ^q gs c weapons Lance;gs c update')
 
-    lockstyleset = 3
-
     select_default_macro_book()
-    set_lockstyle()
 end
 
 -- Define sets and vars used by this job file.
@@ -138,7 +135,7 @@ function init_gear_sets()
         legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Eschan Stone",
+        waist="Fotia Belt",
         left_ear="Thrud Earring",
         right_ear="Moonshade Earring",
         left_ring="Flamma Ring",
@@ -154,7 +151,7 @@ function init_gear_sets()
         legs="Flamma Dirs +2",
         feet="Flam. Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Eschan Stone",
+        waist="Fotia Belt",
         left_ear="Thrud Earring",
         right_ear="Moonshade Earring",
         left_ring="Flamma Ring",
@@ -164,14 +161,14 @@ function init_gear_sets()
 
     sets.precast.WS['Tachi: Jinpu'] = {
         ammo="Knobkierrie",
-        head="Flam. Zucchetto +2",
+        head=gear.valorous_wsd_head,
         body="Found. Breastplate",
         hands="Founder's Gauntlets",
-        legs="Flamma Dirs +2",
-        feet="Flam. Gambieras +2",
+        legs="Hiza. Hizayoroi +2",
+        feet="Founder's Greaves",
         neck="Sam. Nodowa +1",
-        waist="Eschan Stone",
-        left_ear="Thrud Earring",
+        waist="Fotia Belt",
+        left_ear="Friomisi Earring",
         right_ear="Moonshade Earring",
         left_ring="Flamma Ring",
         right_ring="Karieyh Ring",
@@ -614,6 +611,10 @@ function check_trust()
     return false
 end
 
-function set_lockstyle()
-    send_command('wait 10; input /lockstyleset ' .. lockstyleset)
+function user_job_lockstyle()
+	if state.Weapons.value == 'Dojikiri Yasutsuna' then
+		windower.chat.input('/lockstyleset 003')
+	else
+		windower.chat.input('/lockstyleset 003')
+	end
 end
