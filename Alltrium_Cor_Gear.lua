@@ -128,9 +128,9 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Light Shot'] = {
         ammo=gear.QDbullet,
-        head="Mummu Bonnet +1",
+        head="Malignance Chapeau",
         body="Mummu Jacket +2",
-        hands="Mummu Wrists +1",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Laksa. Bottes  +2",
         neck="Comm. Charm +1",
@@ -436,7 +436,7 @@ function init_gear_sets()
     sets.midcast.RA = {
         head="Malignance Chapeau",
         body="Laksa. Frac +2",
-        hands="Meg. Gloves +2",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Ocachi Gorget",
@@ -495,9 +495,9 @@ function init_gear_sets()
     }
 
     sets.idle.PDT = {
-        head="Meghanada Visor +2",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
-        hands="Meg. Gloves +2",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Loricate Torque +1",
@@ -515,7 +515,7 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {
-        head="Meghanada Visor +2",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
         hands="Meg. Gloves +2",
         legs="Malignance Tights",
@@ -530,9 +530,9 @@ function init_gear_sets()
     }
 
     sets.defense.MDT = {
-        head="Meghanada Visor +2",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
-        hands="Meg. Gloves +2",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Loricate Torque +1",
@@ -545,9 +545,9 @@ function init_gear_sets()
     }
 
     sets.defense.MEVA = {
-        head="Meghanada Visor +2",
+        head="Malignance Chapeau",
         body="Meg. Cuirie +2",
-        hands="Meg. Gloves +2",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Loricate Torque +1",
@@ -610,7 +610,7 @@ function init_gear_sets()
     sets.engaged.DT = {
         head="Malignance Chapeau",
         body="Meg. Cuirie +2",
-        hands="Adhemar Wrist. +1",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Loricate Torque +1",
@@ -663,7 +663,7 @@ function init_gear_sets()
     sets.engaged.DW.DT = {
         head="Malignance Chapeau",
         body="Meg. Cuirie +2",
-        hands="Adhemar Wrist. +1",
+        hands="Malignance Gloves",
         legs="Malignance Tights",
         feet="Malignance Boots",
         neck="Loricate Torque +1",
