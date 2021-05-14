@@ -255,7 +255,7 @@ function init_gear_sets()
 	sets.precast.WS['Expiacion'].Fodder = set_combine(sets.precast.WS['Expiacion'], {})
 
 	sets.precast.WS['Sanguine Blade'] = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head ="Pixie Hairpin +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -366,7 +366,7 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -421,7 +421,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast['Enfeebling Magic'] = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -437,7 +437,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast['Dark Magic'] = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -477,7 +477,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Elemental Magic'] = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -493,7 +493,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast['Elemental Magic'].Resistant = {
-		ammo="Ghastly Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head="Jhakri Coronal +1",
 		body="Jhakri Robe +2",
 		hands="Jhakri Cuffs +2",
@@ -673,7 +673,7 @@ function init_gear_sets()
 		head="Rawhide Mask",
 		body="Jhakri Robe +2",
 		hands="Serpentes Cuffs",
-		legs="Malignance Tights",
+		legs="Rawhide Trousers",
 		feet="Malignance Boots",
 		neck="Sanctity Necklace",
 		waist="Flume Belt +1",
@@ -702,10 +702,7 @@ function init_gear_sets()
 		back=gear.stp_jse_back,
 	}
 
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {
-		legs="Carmine Cuisses +1",
-		--feet="Hippo. Socks +1"
-	})
+	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
 	-- Defense sets
 	sets.defense.PDT = {
@@ -1124,15 +1121,18 @@ buff_spell_lists = {
 	Cleave = {
 		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
 		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
-		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
-		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=true},
 		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=true},
-		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=true},
 		{Name='Diamondhide',		Buff='Stoneskin',		SpellID=632,	Reapply=true},
 		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=true},
-		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=true},
 		{Name='Carcharian Verve',	Buff='Aquaveil',		SpellID=745,	Reapply=false},
-		{Name='Memento Mori',		Buff='Magic Atk. Boost',SpellID=538,	Reapply=false},
 		{Name='Reactor Cool',		Buff='Defense Boost',	SpellID=613,	Reapply=true},
+	},
+
+	Lilith = {
+		{Name='Erratic Flutter',	Buff='Haste',				SpellID=710,	Reapply=true},
+		{Name='Battery Charge',		Buff='Refresh',				SpellID=662,	Reapply=true},
+		{Name='Saline Coat',		Buff='Maigc Defense Boost',	SpellID=614,	Reapply=false},
+		{Name='Barrier Tusk',		Buff='Phalanx',				SpellID=685,	Reapply=false},
+		{Name='Cocoon',				Buff='Defense Boost',		SpellID=547,	Reapply=false},
 	},
 }

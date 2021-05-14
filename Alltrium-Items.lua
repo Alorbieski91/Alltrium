@@ -21,6 +21,7 @@ sets.precast.Item['Holy Water'] = {}
 
 gear.herculean_wsd_head = {name="Herculean Helm", augments={'Mag. crit. hit dmg. +2%','"Mag.Atk.Bns."+5','Weapon skill damage +8%','Mag. Acc.+9 "Mag.Atk.Bns."+9',}}
 gear.herculean_nuke_head = {name="Herculean Helm",augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Enmity-3','INT+9','"Mag.Atk.Bns."+13',}}
+gear.herculean_phalanx_hands = { name="Herculean Gloves", augments={'Accuracy+14','Rng.Atk.+7','Phalanx +4','Accuracy+17 Attack+17','Mag. Acc.+4 "Mag.Atk.Bns."+4',}}
 gear.herculean_ta_legs = {name="Herculean Trousers",augments={'Accuracy+30','"Triple Atk."+4','Attack+13',}}
 gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Accuracy+29','Weapon skill damage +4%','STR+8',}}
 gear.herculean_nuke_legs = {name="Herculean Trousers",augments={'"Mag.Atk.Bns."+25','Enmity-3','STR+5','Mag. Acc.+2',}}

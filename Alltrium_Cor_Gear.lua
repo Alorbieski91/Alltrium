@@ -130,7 +130,7 @@ function init_gear_sets()
         ammo=gear.QDbullet,
         head="Malignance Chapeau",
         body="Mummu Jacket +2",
-        hands="Malignance Gloves",
+        hands="Laksa. Gants +2",
         legs="Malignance Tights",
         feet="Laksa. Bottes  +2",
         neck="Comm. Charm +1",
