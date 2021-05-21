@@ -770,7 +770,7 @@ function init_gear_sets()
 	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
 	sets.weapons.Tizbron = {main="Tizona",sub="Machaera +2"}
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
-	sets.weapons.Almace = {main="Naegling",sub="Colada"}
+	sets.weapons.Almace = {main="Tanmogayi +1",sub="Machaera +2"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
 	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}

@@ -8,7 +8,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT_HP','BDT_HP','MDT','BDT')
 	state.ResistDefenseMode:options('MEVA_HP','MEVA','Death','Charm','DTCharm')
 	state.IdleMode:options('Normal','Tank','KiteTank','Sphere')
-	state.Weapons:options('None','Aettir','DualWeapons')
+	state.Weapons:options('None','Aettir','DualWeapons','Montante')
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
@@ -300,7 +300,7 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Aettir = {main="Aettir",sub="Refined Grip +1"}
-	sets.weapons.Lionheart = {main="Lionheart",sub="Refined Grip +1"}
+	sets.weapons.Montante = {main="Montante +1",sub="Refined Grip +1"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Malignance Sword"}
 
 	-- Defense Sets
