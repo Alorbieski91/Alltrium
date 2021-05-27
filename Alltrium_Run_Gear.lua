@@ -264,7 +264,7 @@ function init_gear_sets()
 		main="Aettir",sub="Refined Grip +1",ammo="Homiliary",
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Runeist Coat +1",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Rawhide Trousers",feet="Erilaz Greaves +1"}
+		back=gear.enmity_jse_back,waist="Flume Belt +1",legs=gear.herculean_refresh_legs,feet="Erilaz Greaves +1"}
 
 	sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 
@@ -284,7 +284,7 @@ function init_gear_sets()
 		main="Aettir",sub="Refined Grip +1",ammo="Homiliary",
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Runeist Coat +1",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Rawhide Trousers",feet="Erilaz Greaves +1"}
+		back=gear.enmity_jse_back,waist="Flume Belt +1",legs=gear.herculean_refresh_legs,feet="Erilaz Greaves +1"}
 
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 
