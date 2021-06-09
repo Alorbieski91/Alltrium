@@ -264,7 +264,7 @@ function init_gear_sets()
 		main="Aettir",sub="Refined Grip +1",ammo="Homiliary",
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Runeist Coat +1",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back=gear.enmity_jse_back,waist="Flume Belt +1",legs=gear.herculean_refresh_legs,feet="Erilaz Greaves +1"}
+		back=gear.enmity_jse_back,waist="Flume Belt +1",legs=gear.herculean_refresh_legs,feet=gear.herculean_refresh_feet}
 
 	sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 
@@ -383,6 +383,7 @@ function init_gear_sets()
 		head="Carmine Mask +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Mache Earring +1",
 		body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
+	
 	sets.engaged.DTLite = {main="Aettir",sub="Refined Grip +1",ammo="Ginsen",
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Mache Earring +1", --head="Aya. Zucchetto +2"
 		body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Shadow Ring",ring2="Defending Ring",
@@ -403,6 +404,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Mache Earring +1", --head="Aya. Zucchetto +2"
 		body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.enmity_jse_back,waist="Olseni Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
+	
 	sets.engaged.Tank = {main="Aettir",sub="Refined Grip +1",ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Ethereal Earring",
 		body="Futhark Coat +1",hands="Turms Mittens",ring1="Shadow Ring",ring2="Defending Ring",
@@ -448,43 +450,6 @@ function select_default_macro_book()
 	else
 		set_macro_page(1, 4)
 	end
-end
-
---Job Specific Trust Overwrite
-function check_trust()
-	if not moving then
-		if state.AutoTrustMode.value and not data.areas.cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
-			local party = windower.ffxi.get_party()
-			if party.p5 == nil then
-				local spell_recasts = windower.ffxi.get_spell_recasts()
-			
-				if spell_recasts[980] < spell_latency and not have_trust("Yoran-Oran") then
-					windower.send_command('input /ma "Yoran-Oran (UC)" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[952] < spell_latency and not have_trust("Koru-Moru") then
-					windower.send_command('input /ma "Koru-Moru" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[979] < spell_latency and not have_trust("Selh'teus") then
-					windower.send_command('input /ma "Selh\'teus" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[967] < spell_latency and not have_trust("Qultada") then
-					windower.send_command('input /ma "Qultada" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[914] < spell_latency and not have_trust("Ulmia") then
-					windower.send_command('input /ma "Ulmia" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				else
-					return false
-				end
-			end
-		end
-	end
-	return false
 end
 
 function user_job_lockstyle()

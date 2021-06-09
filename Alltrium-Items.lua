@@ -27,7 +27,7 @@ gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Accuracy+29','We
 gear.herculean_nuke_legs = {name="Herculean Trousers",augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','AGI+10','"Mag.Atk.Bns."+2',}}
 gear.herculean_refresh_legs = {name="Herculean Trousers",augments={'Pet: "Subtle Blow"+9','Accuracy+16','"Refresh"+2',}}
 gear.herculean_ta_feet = {name="Herculean Boots",augments={'Accuracy+25','"Triple Atk."+3','DEX+10','Attack+12',}}
-gear.herculean_refresh_feet = {name="Herculean Boots",augments={'MND+7','Accuracy+9','"Refresh"+1','Accuracy+1 Attack+1',}}
+gear.herculean_refresh_feet = {name="Herculean Boots",augments={'Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','"Refresh"+2','Accuracy+1 Attack+1','Mag. Acc.+1 "Mag.Atk.Bns."+1',}}
 
 gear.telchine_whitewind_head = {name="Telchine Cap",augments={'"Cure" potency +8%','HP+48',}}
 gear.telchine_whitewind_body = {name="Telchine Chas.",augments={'"Cure" potency +5%','HP+50',}}
