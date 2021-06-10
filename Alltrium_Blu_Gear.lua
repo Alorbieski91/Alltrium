@@ -145,6 +145,7 @@ function init_gear_sets()
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Mache Earring +1",ear2="Odr Earring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Begrudging Ring",ring2="Epona's Ring",
 		back=gear.crit_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet="Malignance Boots"})
+
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
@@ -158,6 +159,7 @@ function init_gear_sets()
 		head=gear.herculean_wsd_head,neck="Mirage Stole",ear1="Ishvara Earring",ear2="Moonshade Earring",
 		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Karieyh Ring",ring2="Rufescent Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Jhakri Pigaches +1"})
+
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.wsd_jse_back})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {})
@@ -378,14 +380,14 @@ function init_gear_sets()
 
 	-- Other Specific Spells --
 
-	sets.midcast['Blue Magic']['White Wind'] = {ammo="Ginsen",
+	sets.midcast['Blue Magic']['White Wind'] = {ammo="Staunch Tathlum",
 		head=gear.telchine_whitewind_head,neck="Sanctity Necklace",ear1="Odnowa Earring",ear2="Mendi. Earring",
 		body=gear.telchine_whitewind_body,hands=gear.telchine_whitewind_hands,ring1="Kunaji Ring",ring2="Meridian Ring",
 		back="Cornflower Cape",waist="Eschan Stone",legs=gear.telchine_whitewind_legs,feet=gear.telchine_whitewind_feet}
 
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
-	sets.midcast['Blue Magic'].Healing = {ammo="Ginsen",
+	sets.midcast['Blue Magic'].Healing = {ammo="Staunch Tathlum",
 		head=gear.telchine_whitewind_head,neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Mendi. Earring",
 		body=gear.telchine_whitewind_body,hands=gear.telchine_whitewind_hands,ring1="Kunaji Ring",ring2="Meridian Ring",
 		back=gear.nuke_jse_back,waist="Eschan Stone",legs=gear.telchine_whitewind_legs,feet=gear.telchine_whitewind_feet}
@@ -393,12 +395,12 @@ function init_gear_sets()
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	sets.NonElementalCure = {back="Tempered Cape +1",waist="Luminary Sash"}
 
-	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Ginsen",
+	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Staunch Tathlum",
 		head="Telchine Cap",neck="Mirage Stole",ear1="Ethereal Earring",ear2="Mendi. Earring",
 		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Jhakri Ring",ring2="Defending Ring",
 		back="Cornflower Cape",waist="Flume Belt +1",legs="Hashishin Tayt +1",feet="Carmine Greaves"}
 
-	sets.midcast['Blue Magic'].Buff = {ammo="Ginsen",
+	sets.midcast['Blue Magic'].Buff = {ammo="Staunch Tathlum",
 		head="Telchine Cap",neck="Sanctity Necklace",ear1="Ethereal Earring",ear2="Mendi. Earring",
 		body="Assim. Jubbah +2",hands="Telchine Gloves",ring1="Jhakri Ring",ring2="Defending Ring",
 		back="Cornflower Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
@@ -427,20 +429,20 @@ function init_gear_sets()
 	sets.Learning = {hands="Assim. Bazu. +2"}
 
 	-- Resting sets
-	sets.resting = {ammo="Ginsen",
+	sets.resting = {ammo="Staunch Tathlum",
 		head="Rawhide Mask",neck="Sanctity Necklace",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Paguroidea Ring",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- Idle sets
-	sets.idle = {ammo="Ginsen",
+	sets.idle = {ammo="Staunch Tathlum",
 		head="Rawhide Mask",neck="Sanctity Necklace",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs=gear.herculean_refresh_legs,feet=gear.herculean_refresh_feet}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
-	sets.idle.PDT = {ammo="Ginsen",
+	sets.idle.PDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
@@ -448,17 +450,17 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
 	-- Defense sets
-	sets.defense.PDT = {ammo="Ginsen",
+	sets.defense.PDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.defense.MDT = {ammo="Ginsen",
+	sets.defense.MDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",egs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.defense.MEVA = {ammo="Ginsen",
+	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Assim. Jubbah +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}

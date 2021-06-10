@@ -313,6 +313,7 @@ function init_gear_sets()
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
 		body="Runeist Coat +1",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring", --ring2="Moonlight Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
+
 	sets.defense.MDT = {main="Aettir",sub="Refined Grip +1",ammo="Staunch Tathlum",
 		head="Erilaz Galea +1",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Sanare Earring",
 		body="Runeist Coat +1",hands=gear.herculean_refresh_hands,ring1="Shadow Ring",ring2="Defending Ring",
@@ -349,7 +350,6 @@ function init_gear_sets()
 		head="Erilaz Galea +1",neck="Unmoving Collar +1",ear1="Odnowa Earring",ear2="Sanare Earring",
 		body="Runeist Coat +1",hands="Erilaz Gauntlets +1",ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.enmity_jse_back,waist="Engraved Belt",legs="Rune. Trousers +1",feet="Erilaz Greaves +1"}
-
 	sets.defense.Charm = {main="Aettir",sub="Refined Grip +1",ammo="Staunch Tathlum",
 		head="Erilaz Galea +1",neck="Unmoving Collar +1",ear1="Odnowa Earring",ear2="Sanare Earring",
 		body="Runeist Coat +1",hands="Erilaz Gauntlets +1",ring1="Purity Ring",ring2="Vengeful Ring",
