@@ -12,6 +12,7 @@ function user_job_setup()
 
     gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
     gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+    
     -- Additional local binds
     send_command('bind ^` input /ja "Hasso" <me>')
     send_command('bind !` input /ja "Seigan" <me>')

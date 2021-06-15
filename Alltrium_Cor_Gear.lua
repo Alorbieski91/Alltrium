@@ -79,12 +79,12 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
 
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Mummu Bonnet +1",neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Lanun Frac +3",hands="Carmine Fin. Ga. +1",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,waist="K. Kachina Belt +1",legs=gear.herculean_nuke_legs,feet="Chass. Bottes +1"}
 
     sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
-        head="Mummu Bonnet +1",neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Lanun Frac +3",hands="Carmine Fin. Ga. +1",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,waist="K. Kachina Belt +1",legs=gear.herculean_nuke_legs,feet="Chass. Bottes +1"}
 
@@ -94,7 +94,7 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Chass. Bottes +1"}
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-        head="Malignance Chapeau",neck="Comm. Charm +1",ear1="Digni. Earring",ear2="Gwati Earring",
+        head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Digni. Earring",ear2="Gwati Earring",
         body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Stikini Ring",
         back=gear.magic_wsd_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Laksa. Bottes  +2"}
 
@@ -288,7 +288,7 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Paguroidea Ring",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {
@@ -337,7 +337,7 @@ function init_gear_sets()
     sets.engaged.Acc = {
         head="Carmine Mask +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Ramuh Ring +1",
-        back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+        back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
     sets.engaged.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Suppanomimi",
