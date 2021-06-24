@@ -431,7 +431,7 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {ammo="Staunch Tathlum",
 		head="Rawhide Mask",neck="Sanctity Necklace",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Paguroidea Ring",ring2="Defending Ring",
+		body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- Idle sets
@@ -457,12 +457,12 @@ function init_gear_sets()
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
+		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",egs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Assim. Jubbah +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
+		body="Assim. Jubbah +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical

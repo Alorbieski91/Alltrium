@@ -124,7 +124,7 @@ function init_gear_sets()
 
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Chass. Tricorne",neck="Comm. Charm +1",ear1="Neritic Earring",ear2="Odnowa Earring",
-        body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Paguroidea Ring",ring2="Dingir Ring",
+        body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +2"})
@@ -151,7 +151,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
-        head="Meghanada Visor +2",neck="Lissome Necklace",ear1="Lifestorm Earring",ear2="Moonshade Earring",
+        head="Meghanada Visor +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Moonshade Earring",
         body="Lanun Frac +3",hands="Meg. Gloves +2",ring1="Karieyh Ring",ring2="Rufescent Ring",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Carmine Greaves"})
 
@@ -250,14 +250,14 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {
-        head="Malignance Chapeau",neck="Ocachi Gorget",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Malignance Chapeau",neck="Marked Gorget",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Laksa. Frac +2",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.tp_ranger_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {neck="Comm. Charm +1"}
 
     sets.buff['Triple Shot'] = {
-        head="Oshosi Mask",neck="Ocachi Gorget",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Oshosi Mask",neck="Marked Gorget",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Chasseur's Frac +1",hands="Oshosi Gloves",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.tp_ranger_jse_back,waist="K. Kachina Belt +1",legs="Oshosi Trousers",feet="Oshosi Leggings"}
 
@@ -275,7 +275,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Paguroidea Ring",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Meghanada Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.idle.PDT = {
@@ -288,17 +288,17 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Shadow Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MEVA = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Paguroidea Ring",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Shadow Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}

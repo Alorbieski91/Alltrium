@@ -175,7 +175,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
-        body="Hiza. Haramaki +1",hands="Wakido Kote +2",ring1="Paguroidea Ring",ring2="Gelatinous Ring +1",
+        body="Hiza. Haramaki +1",hands="Wakido Kote +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
 
 

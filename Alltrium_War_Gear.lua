@@ -84,8 +84,8 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Lugra Earring +1",ear2="Moonshade Earring",
-		body=gear.valorous_wsd_body,hands="Sulev. Gauntlets +2",ring1="Regal Ring",ring2="Niqmaddu Ring",
-		back="Cichol's Mantle",waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Regal Ring",ring2="Flamma Ring",
+		back="Cichol's Mantle",waist="Fotia Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Combatant's Torque"})
@@ -165,8 +165,8 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Dark Ring",
-		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulev. Cuisses +2",feet="Amm Greaves"}
+		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulev. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 		
@@ -175,22 +175,22 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Moonbeam Ring",ring2="Moonlight Ring",
-		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulev. Cuisses +2",feet="Amm Greaves"}
+		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Moonbeam Ring",ring2="Moonlight Ring",
+		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulev. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Moonbeam Ring",ring2="Moonlight Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Sulev. Cuisses +2",feet="Amm Greaves"}
+		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Moonbeam Ring",ring2="Moonlight Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Sulev. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Moonbeam Ring",ring2="Moonlight Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Sulev. Cuisses +2",feet="Amm Greaves"}
+		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Moonbeam Ring",ring2="Moonlight Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Sulev. Cuisses +1",feet="Amm Greaves"}
 
 	sets.Kiting = {}
 	sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
@@ -198,26 +198,26 @@ function init_gear_sets()
 	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Aurgelmir Orb +1",
-		head="Flam. Zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Petrov Ring",ring2="Niqmaddu Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
-    sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
+	sets.engaged = {ammo="Ginsen",
+		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+    sets.engaged.SomeAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Cessance Earring",
-		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Flamma Ring",ring2="Niqmaddu Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
-	sets.engaged.Acc = {ammo="Aurgelmir Orb +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+	sets.engaged.Acc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Flamma Ring",ring2="Niqmaddu Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
-    sets.engaged.FullAcc = {ammo="Aurgelmir Orb +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+    sets.engaged.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Flamma Ring",ring2="Ramuh Ring +1",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
-    sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
-		head="Flam. Zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Petrov Ring",ring2="Niqmaddu Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Ramuh Ring +1",
+		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+    sets.engaged.Fodder = {ammo="Ginsen",
+		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
 
 --[[
     sets.engaged.Charge = {}
