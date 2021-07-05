@@ -19,6 +19,9 @@ sets.precast.Item['Holy Water'] = {}
 
 --Augmented items that you'll use among multiple jobs.
 
+gear.odyssean_fc_body = {name="Odyss. Chestplate",augments={'Accuracy+7','"Fast Cast"+6','STR+4','Attack+7',}}
+gear.odyssean_fc_feet = {name="Odyssean Greaves",augments={'Accuracy+27','"Fast Cast"+6',}}
+
 gear.herculean_wsd_head = {name="Herculean Helm",augments={'Mag. crit. hit dmg. +2%','"Mag.Atk.Bns."+5','Weapon skill damage +8%','Mag. Acc.+9 "Mag.Atk.Bns."+9',}}
 gear.herculean_nuke_head = {name="Herculean Helm",augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Enmity-3','INT+9','"Mag.Atk.Bns."+13',}}
 gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'INT+4','"Refresh"+2','Accuracy+1 Attack+1',}}

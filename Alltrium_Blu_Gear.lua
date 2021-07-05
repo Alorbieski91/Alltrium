@@ -87,7 +87,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {ammo="Ginsen",
-		head=gear.herculean_wsd_head,neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
+		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
 		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Defending Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
 
@@ -198,13 +198,8 @@ function init_gear_sets()
 	sets.AccMaxTP = {ear1="Regal Earring",ear2="Telos Earring"}
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = {
-		--ammo="Hasty Pinion +1",
-		--head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		--body="Luhlaza Jubbah +3",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
-		--back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"
-		ammo="Ginsen",
-		head=gear.herculean_wsd_head,neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
+	sets.midcast.FastRecast = {ammo="Ginsen",
+		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
 		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Defending Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
 

@@ -312,13 +312,13 @@ function init_gear_sets()
     }
 
     -- Weapons sets
-    sets.weapons.Default = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
-    sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
-    sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
+    sets.weapons.Default = {main="Naegling",sub="Demers. Degen +1",range="Anarchy +2"}
+    sets.weapons.DualWeapons = {main="Naegling",sub="Demers. Degen +1",range="Fomalhaut"}
+    sets.weapons.DualSavageWeapons = {main="Naegling",sub="Demers. Degen +1",range="Anarchy +2"}
     sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Molybdosis"}
-    sets.weapons.DualLeadenMelee = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
+    sets.weapons.DualLeadenMelee = {main="Naegling",sub="Demers. Degen +1",range="Fomalhaut"}
     sets.weapons.DualAeolian = {main="Lanun Knife",sub="Tauret",range="Anarchy +2"}
-    sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
+    sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Demers. Degen +1",range="Fomalhaut"}
     sets.weapons.DualRanged = {main="Kustawi +1",sub="Nusku Shield",range="Fomalhaut"}
 
     -- Engaged sets
