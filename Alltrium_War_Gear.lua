@@ -203,23 +203,23 @@ function init_gear_sets()
 	sets.engaged = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Flam. Gambieras +2"}
 	sets.engaged.SomeAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Flam. Gambieras +2"}
 	sets.engaged.Acc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Flam. Gambieras +2"}
 	sets.engaged.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Ramuh Ring +1",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Flam. Gambieras +2"}
 	sets.engaged.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
-		back="Cichol's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Flam. Gambieras +2"}
 
 --[[
 	sets.engaged.Charge = {}
@@ -382,7 +382,7 @@ function init_gear_sets()
 	sets.weapons.ProcDagger = {main="Bronze Dagger",sub=empty}
 	sets.weapons.ProcSword = {main="Excalipoor",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Ophidian Sword",sub=empty}
-	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
+	sets.weapons.ProcScythe = {main="Bronze Zaghnal",sub=empty}
 	sets.weapons.ProcPolearm = {main="Tzee Xicu's Blade",sub=empty}
 	sets.weapons.ProcGreatKatana = {main="Zanmato",sub=empty}
 	sets.weapons.ProcKatana = {main="Debahocho",sub=empty}

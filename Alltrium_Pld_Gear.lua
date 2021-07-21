@@ -14,7 +14,7 @@ function user_job_setup()
 
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 
-	gear.fastcast_jse_back = {name="Rudianos's Mantle",augments={'INT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10',}}
+	gear.fastcast_jse_back = {name="Rudianos's Mantle",augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
 	gear.enmity_jse_back = {name="Rudianos's Mantle",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}} --'HP+20',
 
 	-- Additional local binds
