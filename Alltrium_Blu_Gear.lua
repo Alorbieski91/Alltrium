@@ -293,7 +293,7 @@ function init_gear_sets()
 		--back="Cornflower Cape",waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"
 		main="Iris",sub="Iris",ammo="Ginsen",
 		head="Jhakri Coronal +1",neck="Mirage Stole",ear1="Digni. Earring",ear2="Njordr Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Sangoma Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Metamorph Ring",
 		back="Cornflower Cape",waist="Eschan Stone",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Enfeebling Magic'] = {ammo="Ghastly Tathlum +1",
@@ -475,13 +475,13 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
-	sets.weapons.Tizbron = {main="Tizona",sub="Machaera +2"}
+	sets.weapons.Tizbron = {main="Tanmogayi +1",sub="Machaera +2"}
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.ProcWeapon = {main="Machaera +2",sub="Gramk's Axe"}
-	sets.weapons.Almace = {main="Tanmogayi +1",sub="Machaera +2"}
+	sets.weapons.Almace = {main="Tanmogayi +1",sub="Colada"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
-	sets.weapons.MagicWeapons = {main="Kaja Rod",sub="Nibiru Cudgel"}
+	sets.weapons.MagicWeapons = {main="Naegling",sub="Kaja Rod"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
@@ -683,6 +683,8 @@ buff_spell_lists = {
 	Cleave = {
 		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
 		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=true},
 		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=true},
 		{Name='Diamondhide',		Buff='Stoneskin',		SpellID=632,	Reapply=true},
 		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=true},

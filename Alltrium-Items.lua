@@ -20,6 +20,7 @@ sets.precast.Item['Holy Water'] = {}
 --Augmented items that you'll use among multiple jobs.
 
 gear.odyssean_fc_body = {name="Odyss. Chestplate",augments={'Accuracy+7','"Fast Cast"+6','STR+4','Attack+7',}}
+gear.odyssean_wsd_hands = {name="Odyssean Gauntlets",augments={'Weapon skill damage +5%','STR+10','Accuracy+14','Attack+2',}}
 gear.odyssean_fc_feet = {name="Odyssean Greaves",augments={'Accuracy+27','"Fast Cast"+6',}}
 
 gear.herculean_wsd_head = {name="Herculean Helm",augments={'Mag. crit. hit dmg. +2%','"Mag.Atk.Bns."+5','Weapon skill damage +8%','Mag. Acc.+9 "Mag.Atk.Bns."+9',}}
@@ -41,4 +42,5 @@ gear.telchine_whitewind_feet = {name="Telchine Pigaches",augments={'"Cure" poten
 gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
 gear.valorous_wsd_head = {name="Valorous Mask",augments={'Accuracy+25','Pet: VIT+5','Weapon skill damage +4%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}}
 gear.valorous_wsd_hands = {name="Valorous Mitts",augments={'Accuracy+15','Weapon skill damage +5%','STR+4','Attack+15',}}
+gear.valorous_wsd_legs = {name="Valorous Hose",augments={'Weapon skill damage +5%','STR+5','Accuracy+11','Attack+2',}}
 gear.valorous_wsd_feet = {name="Valorous Greaves",augments={'Weapon skill damage +4%','STR+10','Accuracy+15','Attack+14',}}
