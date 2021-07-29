@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizalmace','MaccWeapons','MagicWeapons','Almace','Sequence','ProcWeapon','None','MeleeClubs','HybridWeapons')
+	state.Weapons:options('Tizalmace','MaccWeapons','MagicWeapons','Kaja','Tizbron','Almace','Sequence','ProcWeapon','None','MeleeClubs','HybridWeapons')
 
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 

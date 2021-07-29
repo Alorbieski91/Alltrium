@@ -33,15 +33,18 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 
-	sets.Enmity = {}
+	sets.Enmity = {
+		head="Loess Barbuta +1",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
+		body="Souv. Cuirass +1",hands="Macabre Gaunt. +1",ring1="Apeile Ring +1",ring2="Apeile Ring",
+		back=gear.ws_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
 	sets.Knockback = {}
 	sets.passive.Twilight = {head="Twilight Helm",body="Twilight Mail"}
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {back="Cichol's Mantle"}
-	sets.precast.JA['Warcry'] = {}
+	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +1",back="Cichol's Mantle"}
+	sets.precast.JA['Warcry'] = {head="Agoge Mask +1"}
 	sets.precast.JA['Defender'] = {}
-	sets.precast.JA['Aggressor'] = {}
+	sets.precast.JA['Aggressor'] = {body="Agoge Lorica +1"}
 	sets.precast.JA['Mighty Strikes'] = {}
 	sets.precast.JA["Warrior's Charge"] = {}
 	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk"}
@@ -145,9 +148,9 @@ function init_gear_sets()
 	sets.precast.WS["King's Justice"].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
 	sets.precast.WS['Cataclysm'] = set_combine(sets.precast.WS, {ammo="Ghastly Tathlum +1",
-		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		body="Found. Breastplate",hands="Founder's Gloves",ring1="Archon Ring",ring2="Acumen Ring",
-		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Gauntlets",})
+		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
