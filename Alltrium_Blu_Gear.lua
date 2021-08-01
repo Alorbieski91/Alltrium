@@ -476,7 +476,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
 	sets.weapons.Tizbron = {main="Tanmogayi +1",sub="Machaera +2"}
-	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
+	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Machaera +2"}
 	sets.weapons.ProcWeapon = {main="Machaera +2",sub="Gramk's Axe"}
 	sets.weapons.Almace = {main="Tanmogayi +1",sub="Colada"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}

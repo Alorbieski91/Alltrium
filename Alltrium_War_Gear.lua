@@ -97,6 +97,7 @@ function init_gear_sets()
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Combatant's Torque"})
 	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {neck="Combatant's Torque"})
 	sets.precast.WS.Fodder = set_combine(sets.precast.WS, {})
+	sets.precast.WS.Proc = {}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {})
@@ -152,6 +153,9 @@ function init_gear_sets()
 		body="Found. Breastplate",hands="Founder's Gloves",ring1="Archon Ring",ring2="Acumen Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
 
+	--sets.precast.WS['Tachi: Koki'] = set_combine(sets.precast.WS.Proc, {head="Kengo Hachimaki",neck="Agelast Torque"})
+	--sets.precast.WS['Blade: Ei'] = set_combine(sets.precast.WS.Proc, {neck="Yarak Torque"})
+
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
 	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
@@ -171,7 +175,7 @@ function init_gear_sets()
 		-- Sets to return to when not performing an action.
 			
 		-- Resting sets
-		sets.resting = {}
+	sets.resting = {}
 			
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
@@ -229,152 +233,14 @@ function init_gear_sets()
 		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
-
---[[
-	sets.engaged.Charge = {}
-	sets.engaged.SomeAcc.Charge = {}
-	sets.engaged.Acc.Charge = {}
-	sets.engaged.FullAcc.Charge = {}
-	sets.engaged.Fodder.Charge = {}
-
-	sets.engaged.Mighty = {}
-	sets.engaged.SomeAcc.Mighty = {}
-	sets.engaged.Acc.Mighty = {}
-	sets.engaged.FullAcc.Mighty = {}
-	sets.engaged.Fodder.Mighty = {}
-
-	sets.engaged.Charge.Mighty = {}
-	sets.engaged.SomeAcc.Charge.Mighty = {}
-	sets.engaged.Acc.Charge.Mighty = {}
-	sets.engaged.FullAcc.Charge.Mighty = {}
-	sets.engaged.Fodder.Charge.Mighty = {}
-
-	sets.engaged.Adoulin = {}
-	sets.engaged.SomeAcc.Adoulin = {}
-	sets.engaged.Acc.Adoulin = {}
-	sets.engaged.FullAcc.Adoulin = {}
-	sets.engaged.Fodder.Adoulin = {}
-
-	sets.engaged.Adoulin.Charge = {}
-	sets.engaged.SomeAcc.Adoulin.Charge = {}
-	sets.engaged.Acc.Adoulin.Charge = {}
-	sets.engaged.FullAcc.Adoulin.Charge = {}
-	sets.engaged.Fodder.Adoulin.Charge = {}
-
-	sets.engaged.Adoulin.Mighty = {}
-	sets.engaged.SomeAcc.Adoulin.Mighty = {}
-	sets.engaged.Acc.Adoulin.Mighty = {}
-	sets.engaged.FullAcc.Adoulin.Mighty = {}
-	sets.engaged.Fodder.Adoulin.Mighty = {}
-
-	sets.engaged.Adoulin.Charge.Mighty = {}
-	sets.engaged.SomeAcc.Adoulin.Charge.Mighty = {}
-	sets.engaged.Acc.Adoulin.Charge.Mighty = {}
-	sets.engaged.FullAcc.Adoulin.Charge.Mighty = {}
-	sets.engaged.Fodder.Adoulin.Charge.Mighty = {}
-
-	sets.engaged.PDT = {}
-	sets.engaged.SomeAcc.PDT = {}
-	sets.engaged.Acc.PDT = {}
-	sets.engaged.FullAcc.PDT = {}
-	sets.engaged.Fodder.PDT = {}
-
-	sets.engaged.PDT.Charge = {}
-	sets.engaged.SomeAcc.PDT.Charge = {}
-	sets.engaged.Acc.PDT.Charge = {}
-	sets.engaged.FullAcc.PDT.Charge = {}
-	sets.engaged.Fodder.PDT.Charge = {}
-
-	sets.engaged.PDT.Mighty = {}
-	sets.engaged.SomeAcc.PDT.Mighty = {}
-	sets.engaged.Acc.PDT.Mighty = {}
-	sets.engaged.FullAcc.PDT.Mighty = {}
-	sets.engaged.Fodder.PDT.Mighty = {}
-
-	sets.engaged.PDT.Charge.Mighty = {}
-	sets.engaged.SomeAcc.PDT.Charge.Mighty = {}
-	sets.engaged.Acc.PDT.Charge.Mighty = {}
-	sets.engaged.FullAcc.PDT.Charge.Mighty = {}
-	sets.engaged.Fodder.PDT.Charge.Mighty = {}
-
-	sets.engaged.PDT.Adoulin = {}
-	sets.engaged.SomeAcc.PDT.Adoulin = {}
-	sets.engaged.Acc.PDT.Adoulin = {}
-	sets.engaged.FullAcc.PDT.Adoulin = {}
-	sets.engaged.Fodder.PDT.Adoulin = {}
-
-	sets.engaged.PDT.Adoulin.Charge = {}
-	sets.engaged.SomeAcc.PDT.Adoulin.Charge = {}
-	sets.engaged.Acc.PDT.Adoulin.Charge = {}
-	sets.engaged.FullAcc.PDT.Adoulin.Charge = {}
-	sets.engaged.Fodder.PDT.Adoulin.Charge = {}
-
-	sets.engaged.PDT.Adoulin.Mighty = {}
-	sets.engaged.SomeAcc.PDT.Adoulin.Mighty = {}
-	sets.engaged.Acc.PDT.Adoulin.Mighty = {}
-	sets.engaged.FullAcc.PDT.Adoulin.Mighty = {}
-	sets.engaged.Fodder.PDT.Adoulin.Mighty = {}
-
-	sets.engaged.PDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.SomeAcc.PDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.Acc.PDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.FullAcc.PDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.Fodder.PDT.Adoulin.Charge.Mighty = {}
-
-	sets.engaged.MDT = {}
-	sets.engaged.SomeAcc.MDT = {}
-	sets.engaged.Acc.MDT = {}
-	sets.engaged.FullAcc.MDT = {}
-	sets.engaged.Fodder.MDT = {}
-
-	sets.engaged.MDT.Charge = {}
-	sets.engaged.SomeAcc.MDT.Charge = {}
-	sets.engaged.Acc.MDT.Charge = {}
-	sets.engaged.FullAcc.MDT.Charge = {}
-	sets.engaged.Fodder.MDT.Charge = {}
-
-	sets.engaged.MDT.Mighty = {}
-	sets.engaged.SomeAcc.MDT.Mighty = {}
-	sets.engaged.Acc.MDT.Mighty = {}
-	sets.engaged.FullAcc.MDT.Mighty = {}
-	sets.engaged.Fodder.MDT.Mighty = {}
-
-	sets.engaged.MDT.Charge.Mighty = {}
-	sets.engaged.SomeAcc.MDT.Charge.Mighty = {}
-	sets.engaged.Acc.MDT.Charge.Mighty = {}
-	sets.engaged.FullAcc.MDT.Charge.Mighty = {}
-	sets.engaged.Fodder.MDT.Charge.Mighty = {}
-
-	sets.engaged.MDT.Adoulin = {}
-	sets.engaged.SomeAcc.MDT.Adoulin = {}
-	sets.engaged.Acc.MDT.Adoulin = {}
-	sets.engaged.FullAcc.MDT.Adoulin = {}
-	sets.engaged.Fodder.MDT.Adoulin = {}
-
-	sets.engaged.MDT.Adoulin.Charge = {}
-	sets.engaged.SomeAcc.MDT.Adoulin.Charge = {}
-	sets.engaged.Acc.MDT.Adoulin.Charge = {}
-	sets.engaged.FullAcc.MDT.Adoulin.Charge = {}
-	sets.engaged.Fodder.MDT.Adoulin.Charge = {}
-
-	sets.engaged.MDT.Adoulin.Mighty = {}
-	sets.engaged.SomeAcc.MDT.Adoulin.Mighty = {}
-	sets.engaged.Acc.MDT.Adoulin.Mighty = {}
-	sets.engaged.FullAcc.MDT.Adoulin.Mighty = {}
-	sets.engaged.Fodder.MDT.Adoulin.Mighty = {}
-
-	sets.engaged.MDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.SomeAcc.MDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.Acc.MDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.FullAcc.MDT.Adoulin.Charge.Mighty = {}
-	sets.engaged.Fodder.MDT.Adoulin.Charge.Mighty = {}
+	
+	sets.engaged.ProcGreatKatana = set_combine(sets.engaged, {head="Kengo Hachimaki",neck="Agelast Torque"})
+	sets.engaged.ProcKatana = set_combine(sets.engaged, {neck="Yarak Torque"})
 
 	-- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
 	-- sets if more refined versions aren't defined.
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
-
-]]--
 	
 	--Extra Special Sets
 	
