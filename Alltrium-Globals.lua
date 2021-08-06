@@ -2,8 +2,8 @@
 latency = .75
 
 --include('User/Global-WHM-Binds.lua')
---include('User/Global-RDM-Binds.lua')
-include('User/Global-GEO-Binds.lua')
+include('User/Global-RDM-Binds.lua')
+--include('User/Global-GEO-Binds.lua')
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
 conserveshadows = false

@@ -150,11 +150,11 @@ function init_gear_sets()
 
 	sets.precast.WS['Cataclysm'] = set_combine(sets.precast.WS, {ammo="Ghastly Tathlum +1",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
-		body="Found. Breastplate",hands="Founder's Gloves",ring1="Archon Ring",ring2="Acumen Ring",
+		body="Found. Breastplate",hands="Founder's Gauntlets",ring1="Archon Ring",ring2="Acumen Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
-
-	--sets.precast.WS['Tachi: Koki'] = set_combine(sets.precast.WS.Proc, {head="Kengo Hachimaki",neck="Agelast Torque"})
-	--sets.precast.WS['Blade: Ei'] = set_combine(sets.precast.WS.Proc, {neck="Yarak Torque"})
+	
+	sets.precast.WS['Tachi: Koki'] = {ear1="Brutal Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
+	sets.precast.WS['Blade: Ei'] = {ear1="Brutal Earring",ear2="Cessance Earring",neck="Yarak Torque"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
