@@ -9,7 +9,7 @@ function user_job_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Savage','Chango','DualWeapons','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Savage','Polearm','Chango','DualWeapons','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.ws_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%'}}
@@ -91,7 +91,7 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Knobkierrie",
 		head=gear.valorous_wsd_head,neck="War. Beads +1",ear1="Thrud Earring",ear2="Moonshade Earring",
 		body="Flamma Korazin +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Flamma Ring",
-		back=gear.ws_jse_back,waist="Fotia Belt",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +1"}
+		back=gear.ws_jse_back,waist="Fotia Belt",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Combatant's Torque"})
@@ -180,7 +180,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
@@ -190,21 +190,21 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Moonlight Cape",waist="Engraved Belt",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Moonlight Cape",waist="Engraved Belt",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Moonlight Cape",waist="Engraved Belt",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
@@ -214,29 +214,29 @@ function init_gear_sets()
 		
 			-- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
 	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
 	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Ramuh Ring +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
+		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
 	sets.engaged.DT = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Petrov Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
+		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 	
 	sets.engaged.ProcGreatKatana = set_combine(sets.engaged, {head="Kengo Hachimaki",neck="Agelast Torque"})
 	sets.engaged.ProcKatana = set_combine(sets.engaged, {neck="Yarak Torque"})
@@ -254,8 +254,9 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.Savage = {main="Naegling",sub="Sacro Bulwark"} --Blurred Shield +1
-	sets.weapons.Chango = {main="Tokko Chopper",sub="Nepenthe Grip"}
+	sets.weapons.Savage = {main="Naegling",sub="Blurred Shield +1"}
+	sets.weapons.Chango = {main="Kaja Chopper",sub="Nepenthe Grip"}
+	sets.weapons.Polearm = {main="Kaja Lance",sub="Nepenthe Grip"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Nepenthe Grip"}
 	sets.weapons.ProcDagger = {main="Bronze Dagger",sub=empty}
@@ -266,7 +267,7 @@ function init_gear_sets()
 	sets.weapons.ProcGreatKatana = {main="Zanmato",sub=empty}
 	sets.weapons.ProcKatana = {main="Debahocho",sub=empty}
 	sets.weapons.ProcClub = {main="Soulflayer's Wand",sub=empty}
-	sets.weapons.ProcStaff = {main="Ram Staff",sub=empty}
+	sets.weapons.ProcStaff = {main="Levin",sub=empty}
 
 end
 
