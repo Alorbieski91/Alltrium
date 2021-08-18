@@ -9,10 +9,7 @@ sets.buff.Doom = {
     --ring1="Eshmun's Ring",
     --ring2="Eshmun's Ring"
 }
-sets.TreasureHunter = {
-    --head="Wh. Rarab Cap +1",
-    waist="Chaac Belt"
-}
+sets.TreasureHunter = {ammo="Per. Lucky Egg",waist="Chaac Belt"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}

@@ -153,6 +153,11 @@ function init_gear_sets()
 		body="Found. Breastplate",hands="Founder's Gauntlets",ring1="Archon Ring",ring2="Acumen Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
 	
+	sets.precast.WS['Sanguine Blade'] = set_combine(sets.precast.WS, {ammo="Ghastly Tathlum +1",
+		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
+		body="Found. Breastplate",hands="Founder's Gauntlets",ring1="Archon Ring",ring2="Acumen Ring",
+		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
+	
 	sets.precast.WS['Tachi: Koki'] = {ear1="Brutal Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
 	sets.precast.WS['Blade: Ei'] = {ear1="Brutal Earring",ear2="Cessance Earring",neck="Yarak Torque"}
 
