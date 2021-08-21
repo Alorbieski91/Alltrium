@@ -151,7 +151,7 @@ function init_gear_sets()
 
 	sets.precast.WS.Acc = {ammo="Hasty Pinion +1",
 		head="Ynglinga Sallet",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -382,7 +382,7 @@ function init_gear_sets()
 
 	sets.defense.BDT = {main="Malignance Sword",sub="Aegis",ammo="Staunch Tathlum",
 		head="Loess Barbuta +1",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Eabani Earring",
-		body="Souveran Cuirass",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Shadow Ring",
+		body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back=gear.enmity_jse_back,waist="Asklepian Belt",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.defense.Tank = {ammo="Staunch Tathlum",
@@ -438,22 +438,22 @@ function init_gear_sets()
 
 	sets.engaged = {main="Nixxer",sub="Ochain",ammo="Aurgelmir Orb +1",
 		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Flamma Ring",ring2="Petrov Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Petrov Ring",
 		back="Bleating Mantle",waist="Sailfi Belt +1",legs="Sulevi. Cuisses +1",feet="Flam. Gambieras +2"}
 
 	sets.engaged.Acc = {main="Nixxer",sub="Ochain",ammo="Hasty Pinion +1",
 		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
 	sets.engaged.DW = {ammo="Paeapua",
 		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Flamma Ring",ring2="Petrov Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Petrov Ring",
 		back="Bleating Mantle",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
 	sets.engaged.DW.Acc = {ammo="Aurgelmir Orb +1",
 		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +1",ring1="Flamma Ring",ring2="Ramuh Ring +1",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Ramuh Ring +1",
 		back="Letalis Mantle",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
 	sets.engaged.Tank = {main="Nixxer",sub="Ochain",ammo="Staunch Tathlum",
@@ -468,22 +468,22 @@ function init_gear_sets()
 		
 	sets.engaged.BreathTank = {main="Nixxer",sub="Ochain",ammo="Staunch Tathlum",
 		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Thureous Earring",ear2="Etiolation Earring",
-		body="Souveran Cuirass",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Shadow Ring",
+		body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back=gear.enmity_jse_back,waist="Creed Baudrier",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
 		
 	sets.engaged.DDTank = {ammo="Hasty Pinion +1",
 		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Patricius Ring",
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Patricius Ring",
 		back="Weard Mantle",waist="Tempus Fugit",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.engaged.Acc.DDTank = {ammo="Hasty Pinion +1",
 		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Patricius Ring",
+		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Patricius Ring",
 		back="Weard Mantle",waist="Tempus Fugit",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.engaged.NoShellTank = {main="Nixxer",sub="Ochain",ammo="Staunch Tathlum",
 		head="Souveran Schaller",neck="Loricate Torque +1",ear1="Thureous Earring",ear2="Etiolation Earring",
-		body="Souveran Cuirass",hands="Sulev. Gauntlets +1",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Moonlight Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs=gear.odyssean_fc_legs,feet="Cab. Leggings +1"}
 		
 	sets.engaged.Reraise = set_combine(sets.engaged.Tank, sets.Reraise)
