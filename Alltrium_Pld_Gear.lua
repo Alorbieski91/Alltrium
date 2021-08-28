@@ -10,7 +10,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('BDT','MDT_HP','AegisMDT','AegisNoShellMDT','OchainMDT','OchainNoShellMDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP','Death','Charm','Terror')
 	state.IdleMode:options('Normal','Tank','KiteTank','PDT','MDT','Refresh','Reraise')
-	state.Weapons:options('None','Savage','DeaconAegis','SequenceAegis','SequenceBlurred')
+	state.Weapons:options('None','Savage','DeaconAegis','SequenceAegis','SequenceBlurred','DualWeapons')
 
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP','Twilight'}
 
@@ -348,7 +348,7 @@ function init_gear_sets()
 	sets.weapons.Savage = {main="Naegling",sub="Blurred Shield +1"}
 	sets.weapons.SequenceBlurred = {main="Sequence",sub="Blurred Shield +1"}
 	sets.weapons.SequenceAegis = {main="Sequence",sub="Aegis"}
-	sets.weapons.DualWeapons = {main="Sequence",sub="Demersal Degen +1"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Machaera +2"}
 
 	sets.defense.PDT = {main="Nixxer",sub="Ochain",ammo="Staunch Tathlum",
 		head="Souveran Schaller",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
@@ -436,23 +436,23 @@ function init_gear_sets()
 	-- Engaged sets
 	--------------------------------------
 
-	sets.engaged = {main="Nixxer",sub="Ochain",ammo="Aurgelmir Orb +1",
+	sets.engaged = {main="Nixxer",sub="Ochain",ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Petrov Ring",
 		back="Bleating Mantle",waist="Sailfi Belt +1",legs="Sulevi. Cuisses +1",feet="Flam. Gambieras +2"}
 
-	sets.engaged.Acc = {main="Nixxer",sub="Ochain",ammo="Hasty Pinion +1",
+	sets.engaged.Acc = {main="Nixxer",sub="Ochain",ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
-	sets.engaged.DW = {ammo="Paeapua",
-		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+	sets.engaged.DW = {ammo="Coiste Bodhar",
+		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Petrov Ring",
 		back="Bleating Mantle",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
-	sets.engaged.DW.Acc = {ammo="Aurgelmir Orb +1",
-		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+	sets.engaged.DW.Acc = {ammo="Coiste Bodhar",
+		head="Hjarrandi Helm",neck="Lissome Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Flamma Ring",ring2="Ramuh Ring +1",
 		back="Letalis Mantle",waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Flam. Gambieras +2"}
 
