@@ -9,7 +9,7 @@ function user_job_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Savage','Polearm','Chango','DualWeapons','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Savage','Polearm','Chango','DualWeapons','Greatsword','Staff','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.ws_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%'}}
@@ -41,7 +41,7 @@ function init_gear_sets()
 	sets.passive.Twilight = {head="Twilight Helm",body="Twilight Mail"}
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +1",back="Cichol's Mantle"}
+	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +2",back="Cichol's Mantle"}
 	sets.precast.JA['Warcry'] = {head="Agoge Mask +1"}
 	sets.precast.JA['Defender'] = {}
 	sets.precast.JA['Aggressor'] = {body="Agoge Lorica +1"}
@@ -90,7 +90,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Knobkierrie",
 		head=gear.valorous_wsd_head,neck="War. Beads +1",ear1="Thrud Earring",ear2="Moonshade Earring",
-		body="Flamma Korazin +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Flamma Ring",
+		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Flamma Ring",
 		back=gear.ws_jse_back,waist="Fotia Belt",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
@@ -264,6 +264,7 @@ function init_gear_sets()
 	sets.weapons.Polearm = {main="Kaja Lance",sub="Nepenthe Grip"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Nepenthe Grip"}
+	sets.weapons.Staff = {main="Blurred Staff",sub=empty}
 	sets.weapons.ProcDagger = {main="Bronze Dagger",sub=empty}
 	sets.weapons.ProcSword = {main="Excalipoor",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Ophidian Sword",sub=empty}
