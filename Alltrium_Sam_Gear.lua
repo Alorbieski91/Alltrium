@@ -144,7 +144,7 @@ function init_gear_sets()
     sets.MaxTP = {ear1="Thrud Earring",ear2="Lugra Earring +1",}
     sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
     sets.AccDayMaxTPWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
-    sets.DayMaxTPWSEars = {ear1="Thrud Earring",ear2="Brutal Earring",}
+    sets.DayMaxTPWSEars = {ear1="Thrud Earring",ear2="Schere Earring",}
     sets.AccDayWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
     sets.DayWSEars = {ear1="Thrud Earring",ear2="Moonshade Earring",}
 
@@ -232,20 +232,14 @@ function init_gear_sets()
     -- Normal melee group
     -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
     sets.engaged = {ammo="Ginsen",
-        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
-
     sets.engaged.SomeAcc = {ammo="Ginsen",
-        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
-    sets.engaged.Acc = {
-        --ammo="Aurgelmir Orb +1",
-        --head="Wakido Kabuto +3",neck="Moonbeam Nodowa",ear1="Digni. Earring",ear2="Telos Earring",
-        --body="Ken. Samue",hands="Wakido Kote +3",ring1="Niqmaddu Ring",ring2="Regal Ring",
-        --back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Flam. Gambieras +2"
-        ammo="Ginsen",
+    sets.engaged.Acc = {ammo="Ginsen",
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
@@ -254,7 +248,7 @@ function init_gear_sets()
         body="Ken. Samue",hands="Wakido Kote +3",ring1="Ramuh Ring +1",ring2="Regal Ring",
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Wakido Haidate +3",feet="Wakido Sune. +3"}
     sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
-        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Brutal Earring",
+        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands=gear.valorous_acc_hands,ring1="Niqmaddu Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
     sets.engaged.PDT = {ammo="Staunch Tathlum",
@@ -277,39 +271,24 @@ function init_gear_sets()
         head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"}
-    sets.engaged.DTLite = {
-        --ammo="Staunch Tathlum",
-        --head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-        --body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
-        --back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"
-        ammo="Ginsen",
-        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+    sets.engaged.DTLite = {ammo="Ginsen",
+        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
-    sets.engaged.SomeAcc.DTLite = {
-        --ammo="Staunch Tathlum",
-        --head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-        --body="Tartarus Platemail",hands=gear.valorous_acc_hands,ring1="Defending Ring",ring2="Patricius Ring",
-        --back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"
-        ammo="Ginsen",
-        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+    sets.engaged.SomeAcc.DTLite = {ammo="Ginsen",
+        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
-    sets.engaged.Acc.DTLite = {
-        --ammo="Staunch Tathlum",
-        --head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-        --body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
-        --back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"
-        ammo="Ginsen",
+    sets.engaged.Acc.DTLite = {ammo="Ginsen",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
     sets.engaged.FullAcc.DTLite = {ammo="Staunch Tathlum",
-        head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Ynglinga Sallet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"}	
     sets.engaged.Fodder.DTLite = {ammo="Staunch Tathlum",
-        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"}
 

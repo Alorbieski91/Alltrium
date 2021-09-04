@@ -67,7 +67,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {ammo="Impatiens",
-		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Odyss. Chestplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
@@ -75,7 +75,7 @@ function init_gear_sets()
 
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Staunch Tathlum",
-		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Odyss. Chestplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Tempus Fugit",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
@@ -85,6 +85,7 @@ function init_gear_sets()
 
 	sets.Self_Healing = {legs="Souv. Diechlings +1",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {legs="Souv. Diechlings +1",ring2="Kunaji Ring",waist="Gishdubar Sash"}
+	sets.Phalanx_Received = {main="Sakpata's Sword",body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 											
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -157,17 +158,22 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		body="Found. Breastplate",hands="Founder's Gauntlets",ring1="Archon Ring",ring2="Acumen Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Eschite Cuisses",feet="Founder's Greaves",})
+
+	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Coiste Bodhar",
+		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Karieyh Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"})
 	
-	sets.precast.WS['Tachi: Koki'] = {ear1="Brutal Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
-	sets.precast.WS['Blade: Ei'] = {ear1="Brutal Earring",ear2="Cessance Earring",neck="Yarak Torque"}
+	sets.precast.WS['Tachi: Koki'] = {ear1="Schere Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
+	sets.precast.WS['Blade: Ei'] = {ear1="Schere Earring",ear2="Cessance Earring",neck="Yarak Torque"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
 	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
 	sets.AccDayMaxTPWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
-	sets.DayMaxTPWSEars = {ear1="Ishvara Earring",ear2="Brutal Earring",}
+	sets.DayMaxTPWSEars = {ear1="Ishvara Earring",ear2="Schere Earring",}
 	sets.AccDayWSEars = {ear1="Mache Earring +1",ear2="Telos Earring"}
-	sets.DayWSEars = {ear1="Brutal Earring",ear2="Moonshade Earring"}
+	sets.DayWSEars = {ear1="Schere Earring",ear2="Moonshade Earring"}
 
 	--Specialty WS set overwrites.
 	sets.AccWSMightyCharge = {}
@@ -184,9 +190,9 @@ function init_gear_sets()
 			
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
+		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Shadow Mantle",waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 		
@@ -195,22 +201,22 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Shadow Mantle",waist="Flume Belt +1",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Shadow Mantle",waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Hjarrandi Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Moonlight Cape",waist="Engraved Belt",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
+		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Moonlight Cape",waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Hjarrandi Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-		back="Moonlight Cape",waist="Engraved Belt",legs="Sulevi. Cuisses +1",feet="Amm Greaves"}
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		back="Moonlight Cape",waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
 	sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
@@ -219,29 +225,29 @@ function init_gear_sets()
 		
 			-- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
+		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
+		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Schere Earring",ear2="Cessance Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
+		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Ramuh Ring +1",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
+		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Ramuh Ring +1",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +2"}
+		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.DT = {ammo="Coiste Bodhar",
-		head="Hjarrandi Helm",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Sulevia's Plate. +1",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Flamma Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Flamma Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 	
 	sets.engaged.ProcGreatKatana = set_combine(sets.engaged, {head="Kengo Hachimaki",neck="Agelast Torque"})
 	sets.engaged.ProcKatana = set_combine(sets.engaged, {neck="Yarak Torque"})

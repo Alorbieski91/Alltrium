@@ -86,7 +86,7 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {ammo="Ginsen",
+	sets.precast.FC = {ammo="Coiste Bodhar",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
 		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Defending Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
@@ -98,7 +98,7 @@ function init_gear_sets()
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
-	sets.precast.WS = {ammo="Ginsen",
+	sets.precast.WS = {ammo="Coiste Bodhar",
 		head=gear.herculean_wsd_head,neck="Mirage Stole",ear1="Ishvara Earring",ear2="Moonshade Earring",
 		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Karieyh Ring",ring2="Rufescent Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
@@ -198,7 +198,7 @@ function init_gear_sets()
 	sets.AccMaxTP = {ear1="Regal Earring",ear2="Telos Earring"}
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = {ammo="Ginsen",
+	sets.midcast.FastRecast = {ammo="Coiste Bodhar",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
 		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Rahab Ring",ring2="Defending Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
@@ -291,7 +291,7 @@ function init_gear_sets()
 		--head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
 		--body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		--back="Cornflower Cape",waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"
-		main="Iris",sub="Iris",ammo="Ginsen",
+		main="Iris",sub="Iris",ammo="Coiste Bodhar",
 		head="Jhakri Coronal +1",neck="Mirage Stole",ear1="Digni. Earring",ear2="Njordr Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Metamorph Ring",
 		back="Cornflower Cape",waist="Eschan Stone",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
@@ -344,7 +344,7 @@ function init_gear_sets()
 	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring"}
 	sets.element.Light = {}
 
-	sets.midcast.Cure = {ammo="Ginsen",
+	sets.midcast.Cure = {ammo="Coiste Bodhar",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Mendi. Earring",
 		body="Assim. Jubbah +2",hands="Telchine Gloves",ring1="Kunaji Ring",ring2="Meridian Ring",
 		back=gear.nuke_jse_back,waist="Eschan Stone",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
@@ -478,57 +478,57 @@ function init_gear_sets()
 	sets.weapons.Tizbron = {main="Tanmogayi +1",sub="Machaera +2"}
 	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Machaera +2"}
 	sets.weapons.ProcWeapon = {main="Machaera +2",sub="Gramk's Axe"}
-	sets.weapons.Almace = {main="Tanmogayi +1",sub="Colada"}
+	sets.weapons.Almace = {main="Tanmogayi +1",sub="Sakpata's Sword"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
+	sets.weapons.Kaja = {main="Naegling",sub="Sakpata's Sword"}
 	sets.weapons.MagicWeapons = {main="Naegling",sub="Kaja Rod"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
 
-	sets.engaged = {ammo="Ginsen",
+	sets.engaged = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 
-	sets.engaged.AM = {ammo="Ginsen",
+	sets.engaged.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 
 
-	sets.engaged.Acc = {ammo="Ginsen",
+	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet="Malignance Boots"}
 
-	sets.engaged.Acc.AM = {ammo="Ginsen",
+	sets.engaged.Acc.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet="Malignance Boots"}
 
-	sets.engaged.FullAcc = {ammo="Ginsen",
+	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
-	sets.engaged.FullAcc.AM = {ammo="Ginsen",
+	sets.engaged.FullAcc.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
-	sets.engaged.Fodder = {ammo="Ginsen",
+	sets.engaged.Fodder = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 
-	sets.engaged.Fodder.AM = {ammo="Ginsen",
+	sets.engaged.Fodder.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 
-	sets.engaged.DT = {ammo="Ginsen",
+	sets.engaged.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
@@ -553,12 +553,7 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.engaged.Fodder.DT = {
-		--main="Tizona",sub="Almace",ammo="Aurgelmir Orb +1",
-		--head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-		--body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
-		--back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"
-		ammo="Ginsen",
+	sets.engaged.Fodder.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
@@ -591,7 +586,7 @@ function init_gear_sets()
 		--ring1="Mujin Band",
 		--ring2="Locus Ring"
 	}
-	sets.Phalanx_Received = {hands=gear.herculean_phalanx_hands,feet=gear.herculean_nuke_feet}
+	sets.Phalanx_Received = {main="Sakpata's Sword"}
 end
 
 -- Select default macro book on initial load or subjob change.
