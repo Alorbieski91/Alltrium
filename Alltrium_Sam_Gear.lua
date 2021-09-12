@@ -172,9 +172,9 @@ function init_gear_sets()
 
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
-        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-        back=gear.stp_jse_back,waist="Flume Belt +1",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Flume Belt +1",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
 
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
@@ -187,14 +187,14 @@ function init_gear_sets()
     sets.Skillchain = {}
 
     sets.idle = {ammo="Staunch Tathlum",
-        head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.idle.Reraise = set_combine(sets.idle, sets.Reraise)
 
     sets.idle.Weak = {ammo="Staunch Tathlum",
-        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -205,21 +205,21 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
-        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.PDTReraise = set_combine(sets.defense.PDT, sets.Reraise)
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-        head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
 
     sets.defense.MEVA = {ammo="Staunch Tathlum",
-        head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -235,23 +235,23 @@ function init_gear_sets()
     sets.engaged = {ammo="Coiste Bodhar",
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
-        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
-        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.Acc = {ammo="Coiste Bodhar",
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Petrov Ring",
-        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ken. Hakama",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.FullAcc = {ammo="Coiste Bodhar",
         head="Wakido Kabuto +3",neck="Sam. Nodowa +1",ear1="Mache Earring +1",ear2="Telos Earring",
         body="Ken. Samue",hands="Wakido Kote +2",ring1="Ramuh Ring +1",ring2="Regal Ring",
-        back=gear.stp_jse_back,waist="Olseni Belt",legs="Nyame Flanchard",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Olseni Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.Fodder = {ammo="Coiste Bodhar",
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Dedition Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Petrov Ring",
-        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Ryuo Hakama",feet="Flam. Gambieras +2"}
+        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.DT = {ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Nyame Mail",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Defending Ring",

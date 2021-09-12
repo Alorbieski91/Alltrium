@@ -161,10 +161,11 @@ function init_gear_sets()
 
 	sets.precast.WS['Cataclysm'] = {ammo="Knobkierrie",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Acumen Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Karieyh Ring",ring2="Archon Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	sets.precast.WS['Sanguine Blade'] = set_combine(sets.precast.WS['Cataclysm'], {})
+	sets.precast.WS['Seraph Blade'] = set_combine(sets.precast.WS['Cataclysm'], {head="Nyame Helm",ring2="Rufescent Ring"})
 
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring",
