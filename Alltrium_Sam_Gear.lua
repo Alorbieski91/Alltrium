@@ -1,14 +1,14 @@
 -- Setup vars that are user-dependent.
 function user_job_setup()
     state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
-    state.HybridMode:options('Normal','DT','Reraise')
+    state.HybridMode:options('Normal','PDT','DT')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc')
     state.RangedMode:options('Normal', 'Acc')
     state.PhysicalDefenseMode:options('PDT','PDTReraise')
     state.MagicalDefenseMode:options('MDT','MDTReraise')
     state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
-    state.Weapons:options('Dojikiri','ProcWeapon','Lance')
+    state.Weapons:options('Dojikiri','ProcWeapon','ShiningOne')
 
     gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
     gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
@@ -21,7 +21,7 @@ function user_job_setup()
     send_command('bind !@^` gs c cycle Stance')
     send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
     send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
-    send_command('bind ^q gs c weapons Lance;gs c update')
+    send_command('bind ^q gs c weapons ShiningOne;gs c update')
 
     select_default_macro_book()
 end
@@ -67,9 +67,9 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
-        head=gear.valorous_wsd_head,neck="Sam. Nodowa +1",ear1="Thrud Earring",ear2="Moonshade Earring",
+        head="Mpaca's Cap",neck="Sam. Nodowa +1",ear1="Thrud Earring",ear2="Moonshade Earring",
         body="Sakonji Domaru +2",hands=gear.valorous_wsd_hands,ring1="Flamma Ring",ring2="Karieyh Ring",
-        back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet=gear.valorous_wsd_feet}
+        back=gear.ws_jse_back,waist="Sailfi Belt +1",legs="Hiza. Hizayoroi +2",feet=gear.valorous_wsd_feet}
 
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",ear2="Digni. Earring"})
@@ -173,7 +173,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
 
 
@@ -188,14 +188,14 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum",
         head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.idle.Reraise = set_combine(sets.idle, sets.Reraise)
 
     sets.idle.Weak = {ammo="Staunch Tathlum",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +1",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
@@ -252,21 +252,25 @@ function init_gear_sets()
         head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Dedition Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
+    sets.engaged.PDT = {ammo="Coiste Bodhar",
+        head="Mpaca's Cap",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
+        body="Mpaca's Doublet",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Defending Ring",
+        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
     sets.engaged.DT = {ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
         body="Nyame Mail",hands="Wakido Kote +2",ring1="Flamma Ring",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-    sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)
-    sets.engaged.SomeAcc.Reraise = set_combine(sets.engaged.SomeAcc, sets.Reraise)
-    sets.engaged.Acc.Reraise = set_combine(sets.engaged.Acc, sets.Reraise)
-    sets.engaged.FullAcc.Reraise = set_combine(sets.engaged.FullAcc, sets.Reraise)
-    sets.engaged.Fodder.Reraise = set_combine(sets.engaged.Fodder, sets.Reraise)
+    --sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)
+    --sets.engaged.SomeAcc.Reraise = set_combine(sets.engaged.SomeAcc, sets.Reraise)
+    --sets.engaged.Acc.Reraise = set_combine(sets.engaged.Acc, sets.Reraise)
+    --sets.engaged.FullAcc.Reraise = set_combine(sets.engaged.FullAcc, sets.Reraise)
+    --sets.engaged.Fodder.Reraise = set_combine(sets.engaged.Fodder, sets.Reraise)
 
     -- Weapons sets
     sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Utu Grip"}
     sets.weapons.ProcWeapon = {main="Soboro Sukehiro",sub="Utu Grip"}
-    sets.weapons.Lance = {main="Kaja Lance",sub="Utu Grip"}
+    sets.weapons.ShiningOne = {main="Shining One",sub="Utu Grip"}
 
     -- Buff sets
     sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}
