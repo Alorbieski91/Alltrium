@@ -438,7 +438,7 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {head="Malignance Chapeau",body="Nyame Mail",hands="Malignance Gloves",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
+	sets.idle.DTHippo = set_combine(sets.idle.PDT, {head="Malignance Chapeau",body="Nyame Mail",hands="Malignance Gloves",legs="Carmine Cuisses +1",feet="Malignance Boots"})
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",

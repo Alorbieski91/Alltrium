@@ -90,7 +90,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Knobkierrie",
 		head=gear.valorous_wsd_head,neck="War. Beads +1",ear1="Thrud Earring",ear2="Moonshade Earring",
-		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Rufescent Ring",
+		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Niqmaddu Ring",
 		back=gear.ws_jse_back,waist="Sailfi Belt +1",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
@@ -152,7 +152,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Armor Break'] = {ammo="Ghastly Tathlum +1",
 		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Gwati Earring",
-		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Karieyh Ring",ring2="Flamma Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Karieyh Ring",ring2="Niqmaddu Ring",
 		back=gear.ws_jse_back,waist="Eschan Stone",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.precast.WS['Full Break'] = set_combine(sets.precast.WS['Armor Break'], {})
@@ -168,7 +168,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Coiste Bodhar",
 		head="Hjarrandi Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Karieyh Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Karieyh Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"})
 	
 	sets.precast.WS['Tachi: Koki'] = {ear1="Schere Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
@@ -233,27 +233,27 @@ function init_gear_sets()
 	-- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Schere Earring",ear2="Cessance Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Ramuh Ring +1",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.DT = {ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Flamma Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 	
 	sets.engaged.ProcGreatKatana = set_combine(sets.engaged, {head="Kengo Hachimaki",neck="Agelast Torque"})
