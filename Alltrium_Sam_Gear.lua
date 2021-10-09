@@ -59,7 +59,7 @@ function init_gear_sets()
     sets.precast.Waltz['Healing Waltz'] = {}
 
     -- Fast cast sets for spells
-    sets.precast.FC = {neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
+    sets.precast.FC = {neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
 
     -- Ranged snapshot gear
     sets.precast.RA = {}
@@ -151,7 +151,7 @@ function init_gear_sets()
     -- Midcast Sets
     sets.midcast.FastRecast = {
         head="Loess Barbuta +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-        body="Nyame Mail",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
+        body="Sacro Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
         back="Moonlight Cape",waist="Tempus Fugit",legs="Wakido Haidate +3",feet="Nyame Sollerets"}
 
     -- Specific spells
@@ -173,7 +173,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Sacro Breastplate",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
 
 
@@ -188,14 +188,14 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum",
         head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Sacro Breastplate",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.idle.Reraise = set_combine(sets.idle, sets.Reraise)
 
     sets.idle.Weak = {ammo="Staunch Tathlum",
         head="Flam. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-        body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Sacro Breastplate",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
@@ -306,3 +306,8 @@ function user_job_lockstyle()
 		windower.chat.input('/lockstyleset 003')
 	end
 end
+
+autows_list = {
+	['Dojikiri']='Tachi: Fudo',
+	['ShiningOne']='Impulse Drive',
+}

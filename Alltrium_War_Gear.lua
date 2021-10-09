@@ -67,7 +67,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {ammo="Impatiens",
 		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Odyss. Chestplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
+		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})
@@ -75,7 +75,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Odyss. Chestplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
+		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Tempus Fugit",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
@@ -198,7 +198,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Sacro Breastplate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
@@ -307,3 +307,11 @@ function select_default_macro_book()
 		set_macro_page(1, 7)
 	end
 end
+
+autows_list = {
+	['Savage']='Savage Blade',
+	['Chango']='Upheaval',
+	['ShiningOne']='Impulse Drive',
+	['Greatsword']='Resolution',
+	['Club']='Judgement'
+}

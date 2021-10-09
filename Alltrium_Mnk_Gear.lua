@@ -38,12 +38,12 @@ function init_gear_sets()
 	sets.precast.JA['Boost'].OutOfCombat = {} --hands="Anchorite's Gloves +1", Remove Haste and Add Slow Gear.
 	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters +1"}
 	sets.precast.JA['Focus'] = {head="Anchorite's Crown +1"}
-	sets.precast.JA['Counterstance'] = {} --feet="Hesychast's Gaiters +1"
+	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"}
 	sets.precast.JA['Footwork'] = {feet="Shukuyu Sune-Ate"}
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
-	sets.precast.JA['Mantra'] = {feet="Mel. Gaiters +2"} --feet="Hesychast's Gaiters +1"
+	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters +1"}
 
-	sets.precast.JA['Chi Blast'] = {}
+	sets.precast.JA['Chi Blast'] = {head="Hes. Crown +1"}
 	
 	sets.precast.JA['Chakra'] = {
 		head="Malignance Chapeau",
