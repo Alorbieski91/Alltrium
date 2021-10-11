@@ -139,7 +139,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Mache Earring +1",ear2="Odr Earring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Begrudging Ring",ring2="Epona's Ring",
-		back=gear.crit_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet})
+		back=gear.crit_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet})
 
 	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Mache Earring +1",ear2="Odr Earring",
@@ -472,12 +472,12 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
 	sets.weapons.Tizbron = {main="Tanmogayi +1",sub="Machaera +2"}
-	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Machaera +2"}
+	sets.weapons.MeleeClubs = {main="Maxentius",sub="Machaera +2"}
 	sets.weapons.ProcWeapon = {main="Machaera +2",sub="Gramk's Axe"}
 	sets.weapons.Almace = {main="Tanmogayi +1",sub="Sakpata's Sword"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.Kaja = {main="Naegling",sub="Sakpata's Sword"}
-	sets.weapons.MagicWeapons = {main="Naegling",sub="Kaja Rod"}
+	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
@@ -486,12 +486,12 @@ function init_gear_sets()
 	sets.engaged = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
@@ -516,12 +516,12 @@ function init_gear_sets()
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.Fodder.AM = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+		back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mirage Stole",ear1="Brutal Earring",ear2="Suppanomimi",

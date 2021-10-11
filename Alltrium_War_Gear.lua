@@ -33,7 +33,7 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 
-	sets.Enmity = {
+	sets.Enmity = {ammo="Spaience Orb",
 		head="Souv. Schaller +1",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
 		body="Souv. Cuirass +1",hands="Macabre Gaunt. +1",ring1="Apeile Ring +1",ring2="Apeile Ring",
 		back=gear.ws_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
@@ -65,7 +65,7 @@ function init_gear_sets()
 	sets.precast.Flourish1 = {}
 
 	-- Fast cast sets for spells
-	sets.precast.FC = {ammo="Impatiens",
+	sets.precast.FC = {ammo="Spaience Orb",
 		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
@@ -197,7 +197,7 @@ function init_gear_sets()
 			
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
 		body="Sacro Breastplate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
@@ -207,21 +207,21 @@ function init_gear_sets()
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
-		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring",ear2="Tuisto Earring",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1", 
 		back="Moonlight Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

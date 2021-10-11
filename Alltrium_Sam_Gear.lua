@@ -59,7 +59,7 @@ function init_gear_sets()
     sets.precast.Waltz['Healing Waltz'] = {}
 
     -- Fast cast sets for spells
-    sets.precast.FC = {neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
+    sets.precast.FC = {ammo="Spaience Orb",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
 
     -- Ranged snapshot gear
     sets.precast.RA = {}
