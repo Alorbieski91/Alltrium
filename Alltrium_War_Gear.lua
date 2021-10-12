@@ -171,8 +171,8 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Karieyh Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"})
 	
-	sets.precast.WS['Tachi: Koki'] = {ear1="Schere Earring",ear2="Cessance Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
-	sets.precast.WS['Blade: Ei'] = {ear1="Schere Earring",ear2="Cessance Earring",neck="Yarak Torque"}
+	sets.precast.WS['Tachi: Koki'] = {ear1="Schere Earring",ear2="Telos Earring",head="Kengo Hachimaki",neck="Agelast Torque"}
+	sets.precast.WS['Blade: Ei'] = {ear1="Schere Earring",ear2="Telos Earring",neck="Yarak Torque"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
@@ -232,11 +232,11 @@ function init_gear_sets()
 
 	-- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
-		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
-		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Schere Earring",ear2="Cessance Earring",
+		head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Schere Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
@@ -248,11 +248,11 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
-		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		head="Flam. Zucchetto +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 	sets.engaged.DT = {ammo="Coiste Bodhar",
-		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Cessance Earring",
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 	

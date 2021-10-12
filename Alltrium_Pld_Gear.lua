@@ -437,7 +437,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	sets.engaged = {main="Nixxer",sub="Ochain",ammo="Coiste Bodhar",
-		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Flam. Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Flamma Ring",ring2="Petrov Ring",
 		back="Bleating Mantle",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Flam. Gambieras +2"}
 
@@ -472,7 +472,7 @@ function init_gear_sets()
 		back=gear.enmity_jse_back,waist="Creed Baudrier",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.engaged.DDTank = {ammo="Coiste Bodhar",
-		head="Sakpata's Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sakpata's Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
 		back="Weard Mantle",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		

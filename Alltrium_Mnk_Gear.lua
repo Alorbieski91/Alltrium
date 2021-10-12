@@ -80,7 +80,7 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Knobkierrie",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Epona's Rin",ring2="Niqmaddu Ring",
-		back=gear.str_da_jse_back,waist="Moonbow Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+		back=gear.str_da_jse_back,waist="Moonbow Belt",legs="Samnuha Tights",feet="Mpaca's Boots"}
 
 	sets.precast.WSSomeAcc = {ammo="Coiste Bodhar",head="Malignance Chapeau",legs="Hiza. Hizayoroi +2"}
 	sets.precast.WSAcc = {ammo="Coiste Bodhar",head="Malignance Chapeau",neck="Combatant's Torque",ear1="Cessance Earring",ring2="Ramuh Ring +1",body="Nyame Mail",waist="Olseni Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}

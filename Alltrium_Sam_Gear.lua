@@ -233,15 +233,15 @@ function init_gear_sets()
     -- Normal melee group
     -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
     sets.engaged = {ammo="Coiste Bodhar",
-        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
+        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Telos Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
-        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
+        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Telos Earring",ear2="Schere Earring",
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Flamma Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.Acc = {ammo="Coiste Bodhar",
-        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Digni. Earring",
+        head="Flam. Zucchetto +2",neck="Sam. Nodowa +1",ear1="Telos Earring",ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Flamma Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.FullAcc = {ammo="Coiste Bodhar",
@@ -253,11 +253,11 @@ function init_gear_sets()
         body="Kasuga Domaru +1",hands="Wakido Kote +2",ring1="Niqmaddu Ring Ring",ring2="Petrov Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Tatena. Haidate +1",feet="Flam. Gambieras +2"}
     sets.engaged.PDT = {ammo="Coiste Bodhar",
-        head="Mpaca's Cap",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
+        head="Mpaca's Cap",neck="Sam. Nodowa +1",ear1="Telos Earring",ear2="Schere Earring",
         body="Mpaca's Doublet",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
     sets.engaged.DT = {ammo="Coiste Bodhar",
-        head="Nyame Helm",neck="Sam. Nodowa +1",ear1="Cessance Earring",ear2="Schere Earring",
+        head="Nyame Helm",neck="Sam. Nodowa +1",ear1="Telos Earring",ear2="Schere Earring",
         body="Nyame Mail",hands="Wakido Kote +2",ring1="Niqmaddu Ring",ring2="Defending Ring",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
