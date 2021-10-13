@@ -313,5 +313,5 @@ autows_list = {
 	['Chango']='Upheaval',
 	['ShiningOne']='Impulse Drive',
 	['Greatsword']='Resolution',
-	['Club']='Judgement'
+	['Club']='Judgment'
 }

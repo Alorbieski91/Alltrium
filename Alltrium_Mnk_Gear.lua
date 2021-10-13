@@ -79,7 +79,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Knobkierrie",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Epona's Rin",ring2="Niqmaddu Ring",
+		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Niqmaddu Ring",
 		back=gear.str_da_jse_back,waist="Moonbow Belt",legs="Samnuha Tights",feet="Mpaca's Boots"}
 
 	sets.precast.WSSomeAcc = {ammo="Coiste Bodhar",head="Malignance Chapeau",legs="Hiza. Hizayoroi +2"}
@@ -213,15 +213,15 @@ function init_gear_sets()
 	-- Normal melee sets
 	sets.engaged = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Niqmaddu Ring",
+		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 	sets.engaged.SomeAcc = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Niqmaddu Ring",
+		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt",legs="Tatena. Haidate +1",feet=gear.herculean_ta_feet}
 	sets.engaged.Acc = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Ryuo Tekko",ring1="Epona's Ring",ring2="Ramuh Ring +1",
+		body="Mpaca's Doublet",hands="Ryuo Tekko",ring1="Gere Ring",ring2="Ramuh Ring +1",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt",legs="Tatena. Haidate +1",feet="Malignance Boots"}
 	sets.engaged.FullAcc = {ammo="Coiste Bodhar",
 		head="Mummu Bonnet +2",neck="Mnk. Nodowa +1",ear1="Mache Earring +1",ear2="Telos Earring",
@@ -229,7 +229,7 @@ function init_gear_sets()
 		back=gear.dex_da_jse_back,waist="Moonbow Belt",legs="Tatena. Haidate +1",feet="Malignance Boots"}
 	sets.engaged.Fodder = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Niqmaddu Ring",
+		body="Mpaca's Doublet",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	-- Defensive melee hybrid sets
