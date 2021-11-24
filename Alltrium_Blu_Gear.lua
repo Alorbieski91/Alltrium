@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizalmace','MaccWeapons','MagicWeapons','Kaja','Tizbron','Almace','Sequence','ProcWeapon','None','MeleeClubs','HybridWeapons')
+	state.Weapons:options('Tizalmace','MaccWeapons','MagicWeapons','Naegling','Tizbron','Almace','Sequence','ProcWeapon','None','MeleeClubs','HybridWeapons')
 
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -23,6 +23,7 @@ function user_job_setup()
 	gear.obi_cure_back = "Tempered Cape +1"
 
 	autows = 'Savage Blade'
+	autowstp = 1250
 	autofood = 'Grape Daifuku'
 
 	-- Additional local binds
@@ -179,7 +180,7 @@ function init_gear_sets()
 	sets.precast.WS['Expiacion'].DT = set_combine(sets.precast.WS.DT, {back=gear.wsd_jse_back})
 	sets.precast.WS['Expiacion'].Fodder = set_combine(sets.precast.WS['Expiacion'], {})
 
-	sets.precast.WS['Sanguine Blade'] = {ammo="Ghastly Tathlum +1",
+	sets.precast.WS['Sanguine Blade'] = {ammo="Pemphredo Tathlum",
 		head ="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Archon Ring",
 		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
@@ -264,9 +265,9 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {ammo="Ghastly Tathlum +1",
+	sets.midcast['Blue Magic'].Magical = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Shiva Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Magical.Proc = {ammo="Hasty Pinion +1",
@@ -286,20 +287,19 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = {
-		main="Iris",sub="Iris",ammo="Coiste Bodhar",
+	sets.midcast['Blue Magic'].MagicAccuracy = {main="Iris",sub="Iris",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Mirage Stole",ear1="Digni. Earring",ear2="Njordr Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Metamorph Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back="Cornflower Cape",waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Enfeebling Magic'] = {ammo="Ghastly Tathlum +1",
+	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Friomisi Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Shiva Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.nuke_jse_back,aist="Sacro Cord",egs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Dark Magic'] = {ammo="Ghastly Tathlum +1",
+	sets.midcast['Dark Magic'] = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Friomisi Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Archon Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Archon Ring",
 		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Enhancing Magic'] = {}
@@ -324,14 +324,14 @@ function init_gear_sets()
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Elemental Magic'] = {ammo="Ghastly Tathlum +1",
+	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Shiva Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Elemental Magic'].Resistant = {ammo="Ghastly Tathlum +1",
+	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Shiva Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
@@ -372,7 +372,7 @@ function init_gear_sets()
 	-- Other Specific Spells --
 
 	sets.midcast['Blue Magic']['White Wind'] = {ammo="Staunch Tathlum",
-		head=gear.telchine_whitewind_head,neck="Sanctity Necklace",ear1="Odnowa Earring",ear2="Mendi. Earring",
+		head=gear.telchine_whitewind_head,neck="Sanctity Necklace",ear1="Odnowa Earring +1",ear2="Mendi. Earring",
 		body=gear.telchine_whitewind_body,hands=gear.telchine_whitewind_hands,ring1="Kunaji Ring",ring2="Meridian Ring",
 		back="Cornflower Cape",waist="Sacro Cord",legs=gear.telchine_whitewind_legs,feet=gear.telchine_whitewind_feet}
 
@@ -473,10 +473,10 @@ function init_gear_sets()
 	sets.weapons.Tizalmace = {main="Naegling",sub="Machaera +2"}
 	sets.weapons.Tizbron = {main="Tanmogayi +1",sub="Machaera +2"}
 	sets.weapons.MeleeClubs = {main="Maxentius",sub="Machaera +2"}
-	sets.weapons.ProcWeapon = {main="Machaera +2",sub="Gramk's Axe"}
+	sets.weapons.ProcWeapon = {main="Excalipoor",sub="Gramk's Axe"}
 	sets.weapons.Almace = {main="Tanmogayi +1",sub="Sakpata's Sword"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.Kaja = {main="Naegling",sub="Sakpata's Sword"}
+	sets.weapons.Naegling = {main="Naegling",sub="Sakpata's Sword"}
 	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
@@ -689,4 +689,13 @@ buff_spell_lists = {
 		{Name='Barrier Tusk',		Buff='Phalanx',				SpellID=685,	Reapply=false},
 		{Name='Cocoon',				Buff='Defense Boost',		SpellID=547,	Reapply=false},
 	},
+}
+
+autows_list = {
+	['Tizalmace']='Savage Blade',
+	['Tizbron']='Chant du Cygne',
+	['MeleeClubs']='Black Halo',
+	['Almace']='Chant du Cygne',
+	['Naegling']='Savage Blade',
+	['MagicWeapons']='Black Halo'
 }

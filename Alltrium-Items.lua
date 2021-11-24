@@ -36,6 +36,8 @@ gear.telchine_whitewind_hands = {name="Telchine Gloves",augments={'"Cure" potenc
 gear.telchine_whitewind_legs = {name="Telchine Braconi",augments={'"Cure" potency +6%','HP+39',}}
 gear.telchine_whitewind_feet = {name="Telchine Pigaches",augments={'"Cure" potency +7%','HP+35',}}
 
+gear.yorium_phalanx_head = {name="Yorium Barbuta",augments={'Phalanx +3',}}
+
 gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
 gear.valorous_wsd_head = {name="Valorous Mask",augments={'Accuracy+25','Pet: VIT+5','Weapon skill damage +4%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}}
 gear.valorous_wsd_hands = {name="Valorous Mitts",augments={'Accuracy+15','Weapon skill damage +5%','STR+4','Attack+15',}}

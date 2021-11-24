@@ -269,8 +269,8 @@ function init_gear_sets()
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
-	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",sub="Priwen",body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
-	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {main="Sakpata's Sword",sub="Priwen",body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",sub="Priwen",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {main="Sakpata's Sword",sub="Priwen",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
 	sets.midcast.Phalanx.DT = set_combine(sets.midcast.Phalanx.SIRD, {})	
 
 	--------------------------------------
@@ -471,12 +471,12 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
 		back=gear.enmity_jse_back,waist="Creed Baudrier",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
-	sets.engaged.DDTank = {ammo="Coiste Bodhar",
+	sets.engaged.DDTank = {main="Naegling",sub="Ochain",ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
 		back="Weard Mantle",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
-	sets.engaged.Acc.DDTank = {ammo="Coiste Bodhar",
+	sets.engaged.Acc.DDTank = {sub="Ochain",ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="Lissome Necklace",ear1="Mache Earring +1",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
 		back="Weard Mantle",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}

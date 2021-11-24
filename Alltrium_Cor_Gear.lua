@@ -11,6 +11,7 @@ function user_job_setup()
     state.CompensatorMode:options('Always','300','1000','Never')
 
     autows = 'Savage Blade'
+    rangedautows = 'Last Stand'
     autofood = 'Grape Daifuku'
 
     gear.RAbullet = "Chrono Bullet"
@@ -66,7 +67,7 @@ function init_gear_sets()
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
-        head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Chasseur's Gants +1",ring1="Barataria Ring",ring2="Defending Ring",
         back=gear.snapshot_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -123,7 +124,7 @@ function init_gear_sets()
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {ear2="Mendi. Earring"})
 
     sets.precast.RA = {ammo=gear.RAbullet,
-        head="Chass. Tricorne",neck="Comm. Charm +1",ear1="Neritic Earring",ear2="Odnowa Earring",
+        head="Chass. Tricorne",neck="Comm. Charm +1",ear1="Neritic Earring",ear2="Odnowa Earring +1",
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
@@ -274,12 +275,12 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Meghanada Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.idle.PDT = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -287,17 +288,17 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Shadow Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MEVA = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Shadow Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
