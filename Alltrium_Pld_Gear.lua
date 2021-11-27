@@ -254,7 +254,7 @@ function init_gear_sets()
 	sets.Cure_Received = {body="Souv. Cuirass +1",legs="Souv. Diechlings +1",}
 	sets.Self_Refresh = {waist="Gishdubar Sash"}
 
-	sets.midcast['Enhancing Magic'] = {main="Colada",ammo="Staunch Tathlum",
+	sets.midcast['Enhancing Magic'] = {main="Colada",sub="Sacro Bulwark",ammo="Staunch Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Mimir Earring",ear2="Andoaa Earring",
 		body="Shab. Cuirass +1",hands="Leyline Gloves",ring1="Defending Ring",ring2="Kishar Ring",
 		back="Merciful Cape",waist="Olympus Sash",legs="Carmine Cuisses +1",feet=gear.odyssean_fc_feet}
@@ -266,7 +266,7 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {sub="Sacro Bulwark",ring2="Sheltered Ring"})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
 	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",sub="Priwen",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})

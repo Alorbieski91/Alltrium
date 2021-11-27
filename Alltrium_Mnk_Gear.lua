@@ -99,7 +99,7 @@ function init_gear_sets()
 	sets.precast.WS['Howling Fist'] = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Asuran Fists'] = set_combine(sets.precast.WS, {waist="Grunfeld Rope"})
 	sets.precast.WS["Ascetic's Fury"] = set_combine(sets.precast.WS, {neck="Caro Necklace",body="Abnoba Kaftan",hands="Ryuo Tekko +1",ring2="Begrudging Ring",waist="Grunfeld Rope",feet=gear.herculean_wsd_feet})
-	sets.precast.WS["Victory Smite"] = set_combine(sets.precast.WS, {legs="Mpaca's Hose"})
+	sets.precast.WS["Victory Smite"] = set_combine(sets.precast.WS, {legs="Mpaca's Hose",feet="Tatena. Sune. +1"})
 	sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",body="Mpaca's Doublet",hands="Malignance Gloves",legs="Mpaca's Hose",feet="Mpaca's Boots",ear1="Mache Earring +1",back=gear.dex_da_jse_back})
 	sets.precast.WS['Dragon Kick'] = set_combine(sets.precast.WS, {waist="Grunfeld Rope"})
 	sets.precast.WS['Tornado Kick'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",ear1="Moonshade Earring",hands="Tatena. Gote +1",legs="Tatena. Haidate +1"})
@@ -167,41 +167,41 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Hiza. Haramaki +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Sheltered Ring",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
+		body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Sheltered Ring",
+		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.Weak = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Hiza. Haramaki +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Sheltered Ring",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
+		body="Hiza. Haramaki +2",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Sheltered Ring",
+		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.PDT = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}		
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}		
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	-- Defense sets
 	sets.defense.HP = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Purity Ring",
+		back=gear.dex_da_jse_back,waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Purity Ring",
+		back=gear.dex_da_jse_back,waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
 
@@ -237,23 +237,23 @@ function init_gear_sets()
 	-- Defensive melee hybrid sets
 	sets.engaged.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 	sets.engaged.SomeAcc.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 	sets.engaged.Acc.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 	sets.engaged.FullAcc.PDT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Mpaca's Doublet",hands="Hesychast's Gloves +1",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		back=gear.dex_da_jse_back,waist="Moonbow Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- Hundred Fists/Impetus melee set mods
@@ -275,7 +275,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
     sets.Knockback = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	sets.Skillchain = {legs="Ryuo Hakama"}
+	sets.Skillchain = {}
 	
 	-- Weapons sets
 	sets.weapons.Karambit = {main="Karambit"}
