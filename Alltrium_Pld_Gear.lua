@@ -51,7 +51,7 @@ function init_gear_sets()
 		
 	sets.Enmity.SIRD = {main="Brilliance",sub="Sacro Bulwark",ammo="Staunch Tathlum",
 		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Friomisi Earring",ear2="Tuisto Earring",
-		body="Souv. Cuirass +1",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Souv. Cuirass +1",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Audumbla Sash",legs="Founder's Hose",feet=gear.odyssean_fc_feet}
 		
 	sets.Enmity.DT = {main="Brilliance",ammo="Staunch Tathlum",
@@ -146,7 +146,7 @@ function init_gear_sets()
 		
 	sets.precast.WS.DT = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Creed Baudrier",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.precast.WS.Acc = {ammo="Coiste Bodhar",
@@ -183,7 +183,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Atonement'] = {ammo="Spaience Orb",
 		head="Loess Barbuta +1",neck="Fotia Gorget",ear1="Thrud Earring",ear2="Moonshade Earring",
-		body="Souv. Cuirass +1",hands=gear.odyssean_wsd_hands,ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Souv. Cuirass +1",hands=gear.odyssean_wsd_hands,ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Fotia Belt",legs="Flamma Dirs +2",feet="Eschite Greaves"}
 
 	sets.precast.WS['Atonement'].Acc = sets.precast.WS['Atonement']
@@ -205,7 +205,7 @@ function init_gear_sets()
 		
 	sets.midcast.FastRecast.DT = {main="Sakpata's Sword",ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Rev. Surcoat +2",hands="Souv. Handsch. +1",ring1="Gelatinous Ring +1",ring2="Moonlight Ring",
+		body="Rev. Surcoat +2",hands="Souv. Handsch. +1",ring1="Gelatinous Ring +1",ring2="Moonbeam Ring",
 		back="Moonlight Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
 	sets.midcast.Flash = set_combine(sets.Enmity, {})
@@ -320,7 +320,7 @@ function init_gear_sets()
 		
 	sets.idle.Weak = {main="Nixxer",sub="Ochain",ammo="Staunch Tathlum",
 		head="Twilight Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Thureous Earring",
-		body="Twilight Mail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Twilight Mail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Cab. Leggings +1"}
 		
 	sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -483,7 +483,7 @@ function init_gear_sets()
 		
 	sets.engaged.NoShellTank = {main="Nixxer",sub="Ochain",ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Thureous Earring",ear2="Etiolation Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.engaged.Reraise = set_combine(sets.engaged.Tank, sets.Reraise)
