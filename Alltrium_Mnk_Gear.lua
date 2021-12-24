@@ -12,7 +12,7 @@ function user_job_setup()
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None'}
 
 	gear.str_da_jse_back = {name="Segomo's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}
-	gear.dex_da_jse_back = {name="Segomo's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
+	gear.dex_da_jse_back = {name="Segomo's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 
 	update_melee_groups()
 	
@@ -79,10 +79,10 @@ function init_gear_sets()
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
-	sets.precast.WS = {ammo="Knobkierrie",
+	sets.precast.WS = {ammo="Coiste Bodhar",
 		head="Adhemar Bonnet +1",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Mpaca's Doublet",hands="Ryuo Tekko +1",ring1="Gere Ring",ring2="Niqmaddu Ring",
-		back=gear.str_da_jse_back,waist="Moonbow Belt +1",legs="Samnuha Tights",feet="Mpaca's Boots"}
+		back=gear.str_da_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 
 	sets.precast.WSSomeAcc = {ammo="Coiste Bodhar",head="Malignance Chapeau",legs="Hiza. Hizayoroi +2"}
 	sets.precast.WSAcc = {ammo="Coiste Bodhar",head="Malignance Chapeau",neck="Combatant's Torque",ear1="Cessance Earring",ring2="Ramuh Ring +1",body="Nyame Mail",waist="Olseni Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
@@ -99,10 +99,10 @@ function init_gear_sets()
 	sets.precast.WS['Howling Fist'] = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Asuran Fists'] = set_combine(sets.precast.WS, {waist="Grunfeld Rope"})
 	sets.precast.WS["Ascetic's Fury"] = set_combine(sets.precast.WS, {neck="Caro Necklace",body="Abnoba Kaftan",hands="Ryuo Tekko +1",ring2="Begrudging Ring",waist="Grunfeld Rope",feet=gear.herculean_wsd_feet})
-	sets.precast.WS["Victory Smite"] = set_combine(sets.precast.WS, {legs="Mpaca's Hose",feet="Tatena. Sune. +1"})
-	sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",body="Mpaca's Doublet",hands="Malignance Gloves",legs="Mpaca's Hose",feet="Mpaca's Boots",ear1="Mache Earring +1",back=gear.dex_da_jse_back})
+	sets.precast.WS["Victory Smite"] = set_combine(sets.precast.WS, {})
+	sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",hands="Mpaca's Gloves",feet="Mpaca's Boots",ear1="Mache Earring +1",back=gear.dex_da_jse_back})
 	sets.precast.WS['Dragon Kick'] = set_combine(sets.precast.WS, {waist="Grunfeld Rope"})
-	sets.precast.WS['Tornado Kick'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",ear1="Moonshade Earring",hands="Tatena. Gote +1",legs="Tatena. Haidate +1"})
+	sets.precast.WS['Tornado Kick'] = set_combine(sets.precast.WS, {head="Mpaca's Cap",ear1="Moonshade Earring",hands="Mpaca's Gloves"})
 	sets.precast.WS['Spinning Attack'] = set_combine(sets.precast.WS, {waist="Grunfeld Rope"})
 
 	sets.precast.WS["Raging Fists"].SomeAcc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WSSomeAcc)
@@ -280,10 +280,10 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Karambit = {main="Karambit"}
 	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Blurred Staff",sub="Bloodrain Strap"}
+	sets.weapons.Staff = {main="Reikikon",sub="Bloodrain Strap"}
 	sets.weapons.ProcStaff = {main="Levin"}
 	sets.weapons.ProcClub = {main="Soulflayer's Wand"}
-	sets.weapons.ProcSword = {main="Excalipoor",sub=empty}
+	sets.weapons.ProcSword = {main="Twinned Blade",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Ophidian Sword",sub=empty}
 	sets.weapons.ProcScythe = {main="Lost Sickle",sub=empty}
 	sets.weapons.ProcPolearm = {main="Tzee Xicu's Blade",sub=empty}

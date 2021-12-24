@@ -257,7 +257,15 @@ function init_gear_sets()
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Telos Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
-	
+	sets.engaged.Chango = {ammo="Coiste Bodhar",
+		head="Hjarrandi Helm",neck="Vim Torque +1",ear1="Schere Earring",ear2="Telos Earring",
+		body="Sakpata's Plate",hands="Tatena. Gote +1",ring1="Chirich Ring +1",ring2="Niqmaddu Ring",
+		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Tatena. Haidate +1",feet="Tatena. Sune. +1"}
+	sets.engaged.Chango.DT = {ammo="Coiste Bodhar",
+		head="Sakpata's Helm",neck="Vim Torque +1",ear1="Schere Earring",ear2="Telos Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Niqmaddu Ring",
+		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+
 	sets.engaged.ProcGreatKatana = set_combine(sets.engaged, {head="Kengo Hachimaki",neck="Agelast Torque"})
 	sets.engaged.ProcKatana = set_combine(sets.engaged, {neck="Yarak Torque"})
 
@@ -268,20 +276,21 @@ function init_gear_sets()
 	
 	--Extra Special Sets
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Sleep = {neck="Vim Torque +1"}
 	sets.buff.Retaliation = {}
 	sets.buff.Restraint = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
 	sets.weapons.Savage = {main="Naegling",sub="Blurred Shield +1"}
-	sets.weapons.Chango = {main="Kaja Chopper",sub="Utu Grip"}
+	sets.weapons.Chango = {main="Chango",sub="Utu Grip"}
 	sets.weapons.ShiningOne = {main="Shining One",sub="Utu Grip"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Utu Grip"}
 	sets.weapons.Club = {main="Loxotic Mace +1",sub="Blurred Shield +1"}
 	sets.weapons.Staff = {main="Blurred Staff",sub="Utu Grip"}
 	sets.weapons.ProcDagger = {main="Wind Knife",sub=empty}
-	sets.weapons.ProcSword = {main="Excalipoor",sub=empty}
+	sets.weapons.ProcSword = {main="Twinned Blade",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Ophidian Sword",sub=empty}
 	sets.weapons.ProcScythe = {main="Lost Sickle",sub=empty}
 	sets.weapons.ProcPolearm = {main="Tzee Xicu's Blade",sub=empty}

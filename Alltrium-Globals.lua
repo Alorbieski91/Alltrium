@@ -4,6 +4,7 @@ latency = .75
 --include('User/Global-WHM-Binds.lua')
 --include('User/Global-RDM-Binds.lua')
 include('User/Global-GEO-Binds.lua')
+include('User/Global-BRD-Binds.lua')
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
 conserveshadows = false
@@ -88,7 +89,7 @@ send_command('bind ^f exec follow')
 send_command('bind !f exec unfollow')
 send_command('bind @, exec speed')
 send_command('bind @p send @all tr passall')
-send_command('bind @w send @all /warp')
+send_command('bind @h send @all /warp')
 send_command('bind @c send Onamihime /curaga4 Alltrium')
 
 

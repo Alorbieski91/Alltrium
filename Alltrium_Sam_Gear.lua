@@ -189,7 +189,7 @@ function init_gear_sets()
     sets.Skillchain = {}
 
     sets.idle = {ammo="Staunch Tathlum",
-        head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
+        head="Valorous Mask",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Sacro Breastplate",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
