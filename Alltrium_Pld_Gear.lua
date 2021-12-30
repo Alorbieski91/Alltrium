@@ -269,8 +269,8 @@ function init_gear_sets()
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {sub="Sacro Bulwark",ring2="Sheltered Ring"})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
-	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",sub="Priwen",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
-	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {main="Sakpata's Sword",sub="Priwen",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Sakpata's Sword",sub="Priwen",head=gear.valorous_phalanx_head,body=gear.valorous_phalanx_body,hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {main="Sakpata's Sword",sub="Priwen",head=gear.valorous_phalanx_head,body=gear.valorous_phalanx_body,hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",back="Weard Mantle",feet="Souveran Schuhs +1"})
 	sets.midcast.Phalanx.DT = set_combine(sets.midcast.Phalanx.SIRD, {})	
 
 	--------------------------------------

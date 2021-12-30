@@ -156,6 +156,8 @@ function init_gear_sets()
         body="Sacro Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
         back="Moonlight Cape",waist="Tempus Fugit",legs="Wakido Haidate +3",feet="Nyame Sollerets"}
 
+    sets.Phalanx_Received = {head=gear.valorous_phalanx_head,body=gear.valorous_phalanx_body}
+
     -- Specific spells
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
 
@@ -189,7 +191,7 @@ function init_gear_sets()
     sets.Skillchain = {}
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Valorous Mask",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
         body="Sacro Breastplate",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -221,8 +223,8 @@ function init_gear_sets()
     sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
 
     sets.defense.MEVA = {ammo="Staunch Tathlum",
-        head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Purity Ring",
+        head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Vengeful Ring",ring2="Purity Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     -- Engaged sets

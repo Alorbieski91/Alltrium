@@ -2,7 +2,7 @@
 latency = .75
 
 --include('User/Global-WHM-Binds.lua')
---include('User/Global-RDM-Binds.lua')
+include('User/Global-RDM-Binds.lua')
 include('User/Global-GEO-Binds.lua')
 include('User/Global-BRD-Binds.lua')
 

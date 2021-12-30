@@ -81,12 +81,12 @@ function init_gear_sets()
 		back="Moonlight Cape",waist="Tempus Fugit",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
-					
+
 	sets.midcast.Cure = {}
 
 	sets.Self_Healing = {legs="Souv. Diechlings +1",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {legs="Souv. Diechlings +1",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Phalanx_Received = {main="Sakpata's Sword",head=gear.yorium_phalanx_head,body="Odyss. Chestplate",hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
+	sets.Phalanx_Received = {main="Sakpata's Sword",head=gear.valorous_phalanx_head,body=gear.valorous_phalanx_body,hands="Souv. Handsch. +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 											
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -223,8 +223,8 @@ function init_gear_sets()
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1", 
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Vengeful Ring",ring2="Purity Ring", 
 		back="Moonlight Cape",waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}

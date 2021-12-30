@@ -454,8 +454,8 @@ function init_gear_sets()
 		back=gear.stp_jse_back,waist="Flume Belt +1",egs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Nyame Helm",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Vengeful Ring",ring2="Purity Ring",
 		back=gear.stp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical

@@ -38,8 +38,9 @@ gear.telchine_whitewind_feet = {name="Telchine Pigaches",augments={'"Cure" poten
 
 gear.yorium_phalanx_head = {name="Yorium Barbuta",augments={'Phalanx +3',}}
 
-gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
+gear.valorous_phalanx_head = {name="Valorous Mask",augments={'MND+4','Weapon Skill Acc.+14','Phalanx +3','Accuracy+14 Attack+14',}}
 gear.valorous_wsd_head = {name="Valorous Mask",augments={'Accuracy+25','Pet: VIT+5','Weapon skill damage +4%','Mag. Acc.+10 "Mag.Atk.Bns."+10',}}
+gear.valorous_phalanx_body = {name="Valorous Mail", augments={'Rng.Acc.+22','Pet: Accuracy+6 Pet: Rng. Acc.+6','Phalanx +4',}}
 gear.valorous_wsd_hands = {name="Valorous Mitts",augments={'Accuracy+15','Weapon skill damage +5%','STR+4','Attack+15',}}
 gear.valorous_wsd_legs = {name="Valorous Hose",augments={'Weapon skill damage +5%','STR+5','Accuracy+11','Attack+2',}}
 gear.valorous_wsd_feet = {name="Valorous Greaves",augments={'Weapon skill damage +4%','STR+10','Accuracy+15','Attack+14',}}
