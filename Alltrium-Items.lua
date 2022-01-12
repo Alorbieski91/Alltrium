@@ -16,6 +16,8 @@ sets.precast.Item['Holy Water'] = {}
 
 --Augmented items that you'll use among multiple jobs.
 
+gear.malevolence_mh = {name="Malevolence",augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+8','"Fast Cast"+5',}}
+
 gear.odyssean_fc_body = {name="Odyss. Chestplate",augments={'Accuracy+7','"Fast Cast"+6','STR+4','Attack+7',}}
 gear.odyssean_wsd_hands = {name="Odyssean Gauntlets",augments={'Weapon skill damage +5%','STR+10','Accuracy+14','Attack+2',}}
 gear.odyssean_fc_feet = {name="Odyssean Greaves",augments={'Accuracy+27','"Fast Cast"+6',}}

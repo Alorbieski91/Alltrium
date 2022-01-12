@@ -70,7 +70,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
         head="Mpaca's Cap",neck="Sam. Nodowa +1",ear1="Thrud Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",hands=gear.valorous_wsd_hands,ring1="Karieyh Ring",ring2="Niqmaddu Ring",
+        body="Sakonji Domaru +3",hands=gear.valorous_wsd_hands,ring1="Regal Ring",ring2="Niqmaddu Ring",
         back=gear.ws_jse_back,waist="Sailfi Belt +1",legs="Hiza. Hizayoroi +2",feet=gear.valorous_wsd_feet}
 
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {head="Flam. Zucchetto +2",feet="Flam. Gambieras +2",})
@@ -129,7 +129,7 @@ function init_gear_sets()
 
     sets.precast.WS['Tachi: Jinpu'] = {ammo="Knobkierrie",
         head="Nyame Helm",neck="Sam. Nodowa +1",ear1="Friomisi Earring",ear2="Moonshade Earring",
-        body="Sakonji Domaru +3",hands="Nyame Gauntlets",ring1="Karieyh Ring",ring2="Niqmaddu Ring",
+        body="Sakonji Domaru +3",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Niqmaddu Ring",
         back=gear.ws_jse_back,waist="Sailfi Belt +1",legs="Hiza. Hizayoroi +2",feet="Nyame Sollerets"}
 
     sets.precast.WS['Apex Arrow'] = {

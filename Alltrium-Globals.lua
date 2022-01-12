@@ -85,6 +85,7 @@ send_command('bind ^o fillmode') --Lets you see through walls.
 send_command('bind @m gs c mount Fenrir; wait 0.1; input //send @others gs c mount Raptor')
 
 send_command('bind @a exec engage')
+send_command('bind @f exec odyengage')
 send_command('bind ^f exec follow')
 send_command('bind !f exec unfollow')
 send_command('bind @, exec speed')

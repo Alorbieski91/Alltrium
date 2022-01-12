@@ -92,7 +92,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +3",neck="War. Beads +1",ear1="Thrud Earring",ear2="Moonshade Earring",
-		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Karieyh Ring",ring2="Niqmaddu Ring",
+		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Regal Ring",ring2="Niqmaddu Ring",
 		back=gear.ws_jse_back,waist="Sailfi Belt +1",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
@@ -200,7 +200,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Sacro Breastplate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Sacro Breastplate",hands="Sakpata's Gauntlets",ring1="Moonbeam Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Engraved Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
@@ -210,14 +210,14 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Moonbeam Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
 		head="Nyame Helm",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Moonbeam Ring",ring2="Gelatinous Ring +1",
 		back=gear.da_jse_back,waist="Engraved Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
