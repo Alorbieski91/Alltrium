@@ -89,7 +89,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {ammo="Coiste Bodhar",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
-		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Defending Ring",ring2="Rahab Ring",
+		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Rahab Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
@@ -203,7 +203,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Coiste Bodhar",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Etiolation Earring",
-		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Defending Ring",ring2="Rahab Ring",
+		body="Adhemar Jacket",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Rahab Ring",
 		back="Swith Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves"}
 
 	sets.midcast['Blue Magic'] = {}

@@ -9,7 +9,7 @@ function user_job_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Savage','ShiningOne','Chango','DualWeapons','Greatsword','Club','Staff','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff','ProcAxe')
+	state.Weapons:options('Savage','ShiningOne','Chango','Axe','Greatsword','Club','Staff','DualWeapons','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff','ProcAxe')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 	gear.ws_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
@@ -43,7 +43,7 @@ function init_gear_sets()
 	sets.passive.Twilight = {head="Twilight Helm",body="Twilight Mail"}
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +2",back="Cichol's Mantle"}
+	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +3",back="Cichol's Mantle"}
 	sets.precast.JA['Warcry'] = {head="Agoge Mask +3"}
 	sets.precast.JA['Defender'] = {}
 	sets.precast.JA['Aggressor'] = {body="Agoge Lorica +1"}
@@ -69,7 +69,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {ammo="Spaience Orb",
 		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
+		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})
@@ -77,7 +77,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Staunch Tathlum",
 		head="Sakpata's Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
+		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
 		back="Moonlight Cape",waist="Tempus Fugit",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
@@ -92,7 +92,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +3",neck="War. Beads +1",ear1="Thrud Earring",ear2="Moonshade Earring",
-		body="Pumm. Lorica +2",hands=gear.odyssean_wsd_hands,ring1="Regal Ring",ring2="Niqmaddu Ring",
+		body="Pumm. Lorica +3",hands=gear.odyssean_wsd_hands,ring1="Regal Ring",ring2="Niqmaddu Ring",
 		back=gear.ws_jse_back,waist="Sailfi Belt +1",legs=gear.valorous_wsd_legs,feet="Sulev. Leggings +2"}
 
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {back="Letalis Mantle",})
@@ -285,6 +285,7 @@ function init_gear_sets()
 	sets.weapons.Savage = {main="Naegling",sub="Blurred Shield +1"}
 	sets.weapons.Chango = {main="Chango",sub="Utu Grip"}
 	sets.weapons.ShiningOne = {main="Shining One",sub="Utu Grip"}
+	sets.weapons.Axe = {main="Dolichenus",sub="Blurred Shield +1"}
 	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Utu Grip"}
 	sets.weapons.Club = {main="Loxotic Mace +1",sub="Blurred Shield +1"}

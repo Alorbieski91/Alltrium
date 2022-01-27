@@ -126,7 +126,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {main="Sakpata's Sword",ammo="Spaience Orb",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Odnowa Earring +1",ear2="Tuisto Earring",
-		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Sacro Breastplate",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Gelatinous Ring +1",
 		back=gear.fastcast_jse_back,waist="Creed Baudrier",legs="Eschite Cuisses",feet=gear.odyssean_fc_feet}
 		
 	sets.precast.FC.DT = {main="Sakpata's Sword",ammo="Staunch Tathlum",
